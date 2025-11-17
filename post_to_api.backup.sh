@@ -43,6 +43,20 @@ send_file() {
             fi
         }
 }
+
+"""
+
+# MACOS - Use fswatch to listen for changes in logs directory
+fswatch -0 "$LOG_DIR" | while IFS= read -r -d "" FILE
+do
+    # Only read txt files
+    if [[ "$FILE" == *.txt ]]; then
+        send_file "$FILE"
+    fi
+done
+
+"""
+
 # LINUX - Use inotifywait to listen for changes in logs directory
 inotifywait -m -e close_write,create,modify "$LOG_DIR" --format '%w%f' | while read FILE
 do
