@@ -1,0 +1,15 @@
+# PATH  |   PRODUCTION OR PROTECTED
+
+ sft enroll --team discovery
+ sft login
+ sft list-servers
+ ssh strplnetcirstatus001v.inf.wbd.com
+ sft list-servers
+
+ USER :
+ Network.Platform
+ uk6Ar.OB@6<_
+
+CNN Tiene una deuda grande con Warner
+Dalef se fuciona con CNN
+Atera media tiene su mayoria de planta externalizado

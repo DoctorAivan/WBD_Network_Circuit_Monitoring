@@ -1,0 +1,53 @@
+services:
+  db:
+    image: postgres:14.1-alpine
+    container_name: wbd_logs_tracking_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mongolico88!
+      POSTGRES_DB: project
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+  redis:
+    image: redis:alpine
+    container_name: wbd_logs_tracking_redis
+    restart: always
+    ports:
+      - 6379:6379
+
+  nginx:
+    image: nginx:alpine
+    container_name: wbd_logs_tracking_nginx
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ../frontend:/usr/share/nginx/html     # tu build de React
+      - ../nginx/conf.d:/etc/nginx/conf.d     # configuración personalizada
+      - ../certs:/etc/ssl/certs               # certificados SSL
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+    container_name: wbd_logs_tracking_backend
+    restart: always
+    environment:
+      - PRODUCTION=0
+    expose:
+      - 8000
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - ..:/app
+
+volumes:
+  db_data:
