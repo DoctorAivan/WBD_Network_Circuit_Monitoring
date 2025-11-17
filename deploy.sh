@@ -7,11 +7,11 @@ PROJECT="wbd_logs_tracking"
 
 # Run docker compose
 if [ "$ACTION" = "up" ]; then
-  docker-compose -f docker/docker-compose.yml -p $PROJECT up -d
+  docker compose -f docker/docker-compose.yml -p $PROJECT up -d
 elif [ "$ACTION" = "down" ]; then
-  docker-compose -f docker/docker-compose.yml -p $PROJECT down
+  docker compose -f docker/docker-compose.yml -p $PROJECT down
 elif [ "$ACTION" = "nginx" ]; then
-  docker-compose -f docker/docker-compose.yml restart nginx
+  docker compose -f docker/docker-compose.yml restart nginx
 else
   echo "Action must be \"up\" or \"down\""
   exit 1
