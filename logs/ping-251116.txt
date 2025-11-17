@@ -1,672 +1,1008 @@
-2025-11-16 00:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.718,114.393,134.426,4.430
-2025-11-16 00:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.971,77.014,124.974,8.608
-2025-11-16 00:05,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 00:05,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 00:05,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 00:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.704,157.514,167.269,2.035
-2025-11-16 00:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.638,60.177,106.875,7.055
-2025-11-16 00:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.137,30.342,54.704,5.170
-2025-11-16 00:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,16.107,22.286,52.076,4.826
-2025-11-16 00:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,77.174,85.814,122.285,8.112
-2025-11-16 00:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,43.370,51.614,84.845,6.956
-2025-11-16 00:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,52.349,61.710,203.400,22.365
-2025-11-16 00:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,37.663,41.975,47.865,1.877
-2025-11-16 00:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,7.578,8.360,8.915,0.202
-2025-11-16 00:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.680,114.885,145.855,5.492
-2025-11-16 00:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.824,76.714,132.876,9.230
-2025-11-16 00:35,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 00:35,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 00:35,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 00:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.691,157.997,174.790,3.096
-2025-11-16 00:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.991,59.406,64.493,2.129
-2025-11-16 00:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.176,30.156,49.154,4.285
-2025-11-16 00:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.022,25.368,161.549,20.453
-2025-11-16 00:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,67.747,75.283,119.416,8.337
-2025-11-16 00:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,33.847,45.428,121.447,16.835
-2025-11-16 00:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,34.167,50.783,184.000,19.772
-2025-11-16 00:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.090,51.640,72.732,8.356
-2025-11-16 00:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,3.247,8.352,9.102,0.757
-2025-11-16 01:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.695,115.282,141.942,6.118
-2025-11-16 01:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.333,77.321,121.083,9.226
-2025-11-16 01:05,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 01:05,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 01:05,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 01:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.752,157.778,167.034,2.107
-2025-11-16 01:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.605,60.436,107.881,8.969
-2025-11-16 01:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.187,30.502,56.379,6.032
-2025-11-16 01:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,4.871,21.638,44.814,5.849
-2025-11-16 01:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,67.776,77.076,145.545,11.770
-2025-11-16 01:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,34.037,42.766,84.228,9.605
-2025-11-16 01:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,34.071,49.170,179.212,19.070
-2025-11-16 01:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,35.988,53.100,98.402,12.669
-2025-11-16 01:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.957,9.365,49.495,6.873
-2025-11-16 01:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.710,114.991,141.890,5.550
-2025-11-16 01:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,71.159,77.689,130.156,9.391
-2025-11-16 01:35,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 01:35,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 01:35,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 01:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.752,157.589,165.089,1.494
-2025-11-16 01:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.170,60.196,76.415,3.651
-2025-11-16 01:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.148,30.490,53.021,5.353
-2025-11-16 01:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.987,23.855,54.880,8.858
-2025-11-16 01:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,80.472,92.751,171.531,19.682
-2025-11-16 01:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,46.308,51.763,74.062,4.615
-2025-11-16 01:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,54.746,67.280,159.971,16.239
-2025-11-16 01:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,35.952,42.623,62.983,4.892
-2025-11-16 01:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,1.359,9.492,19.608,3.356
-2025-11-16 02:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.722,115.901,147.575,7.590
-2025-11-16 02:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.254,77.673,117.723,7.532
-2025-11-16 02:05,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 02:05,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 02:05,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 02:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.744,158.054,178.184,3.472
-2025-11-16 02:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,57.013,59.769,87.230,4.331
-2025-11-16 02:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.155,30.094,60.933,5.321
-2025-11-16 02:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,9.331,21.639,38.288,4.513
-2025-11-16 02:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,67.943,78.874,134.662,12.353
-2025-11-16 02:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,33.765,41.285,71.441,7.917
-2025-11-16 02:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,33.864,50.520,164.816,19.334
-2025-11-16 02:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.405,43.466,66.583,5.541
-2025-11-16 02:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.939,6.752,16.563,3.450
-2025-11-16 02:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.681,115.477,144.749,5.827
-2025-11-16 02:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.069,76.570,122.258,7.548
-2025-11-16 02:35,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 02:35,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 02:35,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 02:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.703,158.316,166.385,2.764
-2025-11-16 02:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.861,59.947,88.973,4.927
-2025-11-16 02:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.148,29.539,50.715,4.078
-2025-11-16 02:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,11.967,24.332,177.037,22.019
-2025-11-16 02:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,68.243,77.393,114.296,8.855
-2025-11-16 02:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,34.099,41.152,62.778,4.353
-2025-11-16 02:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,36.647,57.141,196.056,26.280
-2025-11-16 02:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,38.290,42.761,67.738,5.592
-2025-11-16 02:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,3.932,8.347,11.584,0.808
-2025-11-16 03:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.707,115.727,152.091,6.941
-2025-11-16 03:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.804,76.828,101.556,5.710
-2025-11-16 03:05,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 03:05,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 03:05,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 03:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.783,157.618,162.421,1.287
-2025-11-16 03:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.117,60.734,86.088,5.762
-2025-11-16 03:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.177,30.185,48.444,4.569
-2025-11-16 03:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,15.618,25.430,160.185,20.153
-2025-11-16 03:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,67.936,80.044,139.892,15.503
-2025-11-16 03:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,33.751,40.367,59.300,5.299
-2025-11-16 03:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,34.025,52.546,175.413,25.605
-2025-11-16 03:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.198,44.181,108.357,10.079
-2025-11-16 03:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,4.284,8.292,9.106,0.605
-2025-11-16 03:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.710,115.907,151.098,7.597
-2025-11-16 03:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.939,76.028,121.413,7.231
-2025-11-16 03:35,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 03:35,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 03:35,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 03:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.710,158.150,179.830,3.794
-2025-11-16 03:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.899,59.397,73.663,2.762
-2025-11-16 03:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.154,29.881,58.456,5.625
-2025-11-16 03:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.849,21.796,48.632,5.771
-2025-11-16 03:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,68.528,77.810,114.828,9.760
-2025-11-16 03:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,34.153,45.035,101.284,14.208
-2025-11-16 03:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,35.505,54.590,183.605,20.690
-2025-11-16 03:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.909,42.357,59.944,3.506
-2025-11-16 03:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.968,12.170,47.350,7.252
-2025-11-16 04:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.662,115.212,134.525,5.799
-2025-11-16 04:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.033,76.708,112.669,6.504
-2025-11-16 04:05,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 04:05,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 04:05,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 04:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.688,157.880,179.375,3.893
-2025-11-16 04:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.648,59.337,77.482,2.914
-2025-11-16 04:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.135,30.278,58.378,5.635
-2025-11-16 04:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.508,24.679,176.434,22.217
-2025-11-16 04:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,68.038,77.791,133.590,11.309
-2025-11-16 04:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,33.891,41.476,61.876,4.830
-2025-11-16 04:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,40.074,50.840,185.699,20.084
-2025-11-16 04:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.048,43.326,79.606,6.669
-2025-11-16 04:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.947,17.345,24.620,5.135
-2025-11-16 04:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.715,116.218,141.109,6.597
-2025-11-16 04:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.182,76.404,112.795,6.582
-2025-11-16 04:35,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 04:35,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 04:35,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 04:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.755,157.972,171.785,2.567
-2025-11-16 04:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.557,60.118,90.163,4.785
-2025-11-16 04:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.132,29.217,41.668,2.596
-2025-11-16 04:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.202,25.283,175.222,22.807
-2025-11-16 04:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,68.052,80.359,228.150,23.134
-2025-11-16 04:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,33.830,41.717,109.484,11.527
-2025-11-16 04:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,42.130,50.150,185.966,19.951
-2025-11-16 04:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.192,41.825,60.427,3.852
-2025-11-16 04:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,1.775,9.213,16.696,2.918
-2025-11-16 05:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.709,114.822,133.719,5.074
-2025-11-16 05:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.987,76.428,94.953,4.562
-2025-11-16 05:05,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 05:05,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 05:05,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 05:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.680,158.399,181.822,4.459
-2025-11-16 05:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.521,60.590,104.668,7.536
-2025-11-16 05:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.111,30.958,52.811,5.904
-2025-11-16 05:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.017,22.430,39.902,4.546
-2025-11-16 05:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,68.069,83.833,168.479,23.374
-2025-11-16 05:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,34.151,42.238,63.035,6.085
-2025-11-16 05:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,43.973,58.131,169.064,24.160
-2025-11-16 05:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.238,44.418,82.257,8.978
-2025-11-16 05:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.839,8.261,16.050,3.584
-2025-11-16 05:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.703,114.771,142.329,5.604
-2025-11-16 05:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.946,77.579,123.230,8.432
-2025-11-16 05:35,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 05:35,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 05:35,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 05:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.758,157.821,168.637,2.663
-2025-11-16 05:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.507,61.295,133.399,11.231
-2025-11-16 05:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.111,30.046,58.923,6.230
-2025-11-16 05:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,6.254,25.184,158.103,20.335
-2025-11-16 05:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,68.471,78.631,114.910,10.714
-2025-11-16 05:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,34.433,45.151,147.403,16.858
-2025-11-16 05:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,44.835,59.147,200.966,28.963
-2025-11-16 05:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.323,42.801,73.799,5.829
-2025-11-16 05:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.956,8.867,19.438,3.477
-2025-11-16 06:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.690,114.967,145.126,6.005
-2025-11-16 06:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.063,76.103,120.147,7.105
-2025-11-16 06:05,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 06:05,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 06:05,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 06:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.764,158.677,173.572,4.418
-2025-11-16 06:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.030,59.879,98.582,5.906
-2025-11-16 06:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.187,29.377,59.058,4.795
-2025-11-16 06:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.156,24.482,160.269,20.082
-2025-11-16 06:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,68.142,80.134,170.397,18.197
-2025-11-16 06:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,34.109,42.385,69.483,6.692
-2025-11-16 06:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,41.510,54.710,175.020,17.584
-2025-11-16 06:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.683,45.365,104.018,12.397
-2025-11-16 06:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,1.007,8.758,19.414,3.488
-2025-11-16 06:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.680,114.670,133.386,4.635
-2025-11-16 06:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.905,75.794,103.557,5.126
-2025-11-16 06:35,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 06:35,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 06:35,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 06:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.746,157.731,167.910,2.107
-2025-11-16 06:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.683,60.734,106.547,7.464
-2025-11-16 06:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.182,29.656,48.133,3.932
-2025-11-16 06:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,4.497,21.621,43.411,5.758
-2025-11-16 06:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,68.377,78.802,137.594,11.992
-2025-11-16 06:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,34.268,46.707,121.998,17.503
-2025-11-16 06:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,39.064,54.806,189.127,20.978
-2025-11-16 06:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.928,43.043,67.171,4.356
-2025-11-16 06:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.915,8.960,26.319,3.733
-2025-11-16 07:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.674,115.721,141.959,6.238
-2025-11-16 07:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.047,77.862,147.849,11.855
-2025-11-16 07:05,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 07:05,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 07:05,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 07:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.763,158.521,181.920,4.693
-2025-11-16 07:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,57.360,60.504,76.473,3.749
-2025-11-16 07:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.156,30.152,62.025,5.916
-2025-11-16 07:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,4.945,21.029,52.106,6.645
-2025-11-16 07:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,68.214,80.020,178.328,18.719
-2025-11-16 07:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,34.088,41.426,71.589,5.840
-2025-11-16 07:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,40.969,57.865,195.745,21.441
-2025-11-16 07:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.406,43.606,87.989,7.613
-2025-11-16 07:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,4.591,10.747,38.251,6.836
-2025-11-16 07:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.706,114.684,144.803,5.362
-2025-11-16 07:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.860,76.390,93.701,4.659
-2025-11-16 07:35,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 07:35,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 07:35,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 07:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.666,158.143,176.773,3.838
-2025-11-16 07:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.147,60.322,109.893,7.653
-2025-11-16 07:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.154,29.917,58.857,4.760
-2025-11-16 07:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,13.943,26.462,190.480,24.023
-2025-11-16 07:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.432,76.850,120.542,7.206
-2025-11-16 07:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,37.047,46.629,127.561,14.676
-2025-11-16 07:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,46.771,61.845,263.765,33.720
-2025-11-16 07:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.277,42.703,82.968,6.576
-2025-11-16 07:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,1.316,9.635,31.070,4.517
-2025-11-16 08:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.658,115.917,144.673,6.811
-2025-11-16 08:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.095,76.279,104.153,5.965
-2025-11-16 08:05,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 08:05,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 08:05,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 08:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.714,158.003,165.495,2.041
-2025-11-16 08:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.990,59.518,72.626,2.871
-2025-11-16 08:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.109,31.037,58.104,7.058
-2025-11-16 08:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,12.018,22.413,57.364,6.165
-2025-11-16 08:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.750,81.824,158.652,17.121
-2025-11-16 08:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.491,43.537,83.407,7.296
-2025-11-16 08:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,43.378,59.946,164.668,22.157
-2025-11-16 08:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.080,43.613,79.976,8.510
-2025-11-16 08:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.967,8.276,19.256,3.902
-2025-11-16 08:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.706,115.960,145.698,6.786
-2025-11-16 08:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.389,76.646,123.132,7.758
-2025-11-16 08:35,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 08:35,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 08:35,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 08:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.721,158.194,173.662,3.549
-2025-11-16 08:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,57.199,59.962,90.371,4.851
-2025-11-16 08:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.158,30.643,49.902,4.703
-2025-11-16 08:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.056,21.931,46.833,5.190
-2025-11-16 08:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.558,81.194,146.021,13.606
-2025-11-16 08:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.595,43.198,66.911,5.285
-2025-11-16 08:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,42.500,61.153,199.013,29.484
-2025-11-16 08:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.511,42.970,79.985,6.462
-2025-11-16 08:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.686,6.342,16.904,4.341
-2025-11-16 09:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.688,116.170,152.253,8.084
-2025-11-16 09:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.030,77.318,128.806,8.995
-2025-11-16 09:05,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 09:05,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 09:05,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 09:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.737,157.885,174.649,2.790
-2025-11-16 09:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.909,59.684,95.897,5.495
-2025-11-16 09:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.145,29.406,43.616,3.376
-2025-11-16 09:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,12.321,25.314,164.896,20.379
-2025-11-16 09:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.206,81.649,144.933,15.646
-2025-11-16 09:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.574,43.846,59.626,5.162
-2025-11-16 09:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,46.585,56.823,191.569,19.607
-2025-11-16 09:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.050,42.397,64.436,4.546
-2025-11-16 09:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.958,8.204,13.936,3.701
-2025-11-16 09:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.712,115.362,137.976,5.229
-2025-11-16 09:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.262,80.492,107.729,8.645
-2025-11-16 09:35,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 09:35,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 09:35,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 09:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.752,158.288,174.781,3.759
-2025-11-16 09:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.115,59.247,68.385,2.521
-2025-11-16 09:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.189,30.351,62.722,6.302
-2025-11-16 09:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,4.838,24.708,160.656,20.567
-2025-11-16 09:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.327,81.030,133.473,13.346
-2025-11-16 09:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.274,41.700,58.383,3.331
-2025-11-16 09:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,46.015,62.041,212.330,29.261
-2025-11-16 09:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.305,43.718,84.159,8.557
-2025-11-16 09:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.983,9.006,27.871,3.818
-2025-11-16 10:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.703,116.538,138.090,7.028
-2025-11-16 10:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.959,76.835,91.674,5.247
-2025-11-16 10:05,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 10:05,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 10:05,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 10:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.766,157.831,165.862,2.156
-2025-11-16 10:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.519,60.855,96.185,6.453
-2025-11-16 10:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.182,29.218,47.280,3.233
-2025-11-16 10:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.708,21.160,38.159,4.566
-2025-11-16 10:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.552,79.832,124.479,11.999
-2025-11-16 10:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.496,44.794,124.922,12.185
-2025-11-16 10:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,43.138,58.948,176.400,22.088
-2025-11-16 10:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,37.335,43.991,75.161,5.662
-2025-11-16 10:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.971,8.959,30.957,4.347
-2025-11-16 10:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.718,115.493,150.813,7.928
-2025-11-16 10:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.926,75.623,99.604,4.508
-2025-11-16 10:35,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 10:35,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 10:35,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 10:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.717,157.722,181.616,3.712
-2025-11-16 10:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.762,60.733,107.726,7.476
-2025-11-16 10:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.118,29.212,53.750,3.654
-2025-11-16 10:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.248,25.516,168.326,21.358
-2025-11-16 10:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.495,83.324,151.180,19.039
-2025-11-16 10:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,37.149,43.139,70.740,6.008
-2025-11-16 10:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,47.299,67.504,197.680,30.397
-2025-11-16 10:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.601,43.367,65.661,5.258
-2025-11-16 10:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.973,8.145,8.776,1.297
-2025-11-16 11:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.662,114.921,143.215,5.758
-2025-11-16 11:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.894,76.136,97.333,5.161
-2025-11-16 11:05,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 11:05,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 11:05,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 11:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.776,159.190,182.794,5.314
-2025-11-16 11:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.466,61.104,100.665,8.263
-2025-11-16 11:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.144,30.407,51.026,5.188
-2025-11-16 11:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,4.645,26.301,174.593,22.649
-2025-11-16 11:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.225,83.985,185.031,23.672
-2025-11-16 11:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,37.438,44.048,61.729,5.335
-2025-11-16 11:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,46.580,62.498,193.772,22.651
-2025-11-16 11:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,35.993,43.369,88.238,7.853
-2025-11-16 11:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,1.339,8.589,13.154,1.667
-2025-11-16 11:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.692,115.520,147.914,7.296
-2025-11-16 11:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.092,75.801,89.007,3.620
-2025-11-16 11:35,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 11:35,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 11:35,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 11:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.743,158.483,174.981,3.939
-2025-11-16 11:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.304,60.416,96.477,6.263
-2025-11-16 11:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.140,29.933,52.403,5.163
-2025-11-16 11:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,11.554,25.757,168.037,22.005
-2025-11-16 11:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.682,79.801,120.035,10.185
-2025-11-16 11:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.966,45.081,78.915,9.048
-2025-11-16 11:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,44.521,55.856,190.177,19.461
-2025-11-16 11:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.353,43.562,75.345,7.122
-2025-11-16 11:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,3.928,8.290,8.936,0.652
-2025-11-16 12:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.701,115.138,130.653,4.793
-2025-11-16 12:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.188,77.134,113.086,7.348
-2025-11-16 12:05,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 12:05,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 12:05,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 12:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.724,157.468,161.929,1.176
-2025-11-16 12:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.190,59.391,70.446,2.496
-2025-11-16 12:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.171,29.303,39.873,2.434
-2025-11-16 12:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,4.620,24.423,67.699,8.971
-2025-11-16 12:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.633,81.344,134.828,12.706
-2025-11-16 12:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.600,44.531,82.583,9.081
-2025-11-16 12:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,43.112,60.562,193.545,27.774
-2025-11-16 12:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.106,42.663,67.556,5.403
-2025-11-16 12:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.928,8.186,10.576,1.362
-2025-11-16 12:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.711,116.169,136.897,7.128
-2025-11-16 12:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.038,76.807,116.939,8.723
-2025-11-16 12:35,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 12:35,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 12:35,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 12:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.749,158.539,191.062,5.471
-2025-11-16 12:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.679,60.712,107.930,7.365
-2025-11-16 12:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.135,30.234,62.238,6.119
-2025-11-16 12:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,4.859,26.297,164.423,21.113
-2025-11-16 12:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.383,78.576,113.340,8.409
-2025-11-16 12:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.504,43.641,65.649,5.643
-2025-11-16 12:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,43.598,56.553,175.776,17.536
-2025-11-16 12:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,37.322,43.309,68.768,5.194
-2025-11-16 12:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,1.291,8.594,19.440,3.386
-2025-11-16 13:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.670,115.114,142.859,5.780
-2025-11-16 13:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.799,76.526,106.224,5.751
-2025-11-16 13:05,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 13:05,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 13:05,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 13:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.696,157.805,178.812,3.533
-2025-11-16 13:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.753,60.202,99.282,6.357
-2025-11-16 13:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.175,30.372,52.166,4.931
-2025-11-16 13:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,16.070,25.344,170.081,20.966
-2025-11-16 13:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.708,80.121,152.402,13.017
-2025-11-16 13:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.585,43.481,74.954,6.802
-2025-11-16 13:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,42.265,58.125,192.252,20.732
-2025-11-16 13:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.643,46.909,84.566,12.348
-2025-11-16 13:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,2.403,9.016,31.381,4.155
-2025-11-16 13:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.706,115.221,147.385,6.322
-2025-11-16 13:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.060,75.945,96.980,4.084
-2025-11-16 13:35,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 13:35,56m-er1-br01,AVE-56M-PP01,ERROR: no round-trip (10.236.76.44) found - 100% packet loss - AVE-56M-PP01 is down
-2025-11-16 13:35,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 13:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.716,157.767,168.304,2.362
-2025-11-16 13:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.649,60.258,96.444,6.291
-2025-11-16 13:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.130,28.774,38.853,1.605
-2025-11-16 13:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,17.246,25.279,159.622,19.601
-2025-11-16 13:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.626,81.561,115.996,11.539
-2025-11-16 13:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.457,46.481,83.807,10.588
-2025-11-16 13:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,45.462,60.944,204.671,28.118
-2025-11-16 13:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.218,43.958,70.305,7.047
-2025-11-16 13:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.752,6.298,16.640,3.709
-2025-11-16 14:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.685,116.058,134.335,6.198
-2025-11-16 14:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.922,76.135,108.488,5.690
-2025-11-16 14:05,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 14:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.692,62.596,86.821,7.481
-2025-11-16 14:05,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 14:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.720,157.868,181.463,3.693
-2025-11-16 14:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.846,60.713,98.937,6.513
-2025-11-16 14:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.148,29.248,52.025,3.649
-2025-11-16 14:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.467,24.827,172.450,21.679
-2025-11-16 14:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.551,77.437,130.433,10.131
-2025-11-16 14:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.287,43.097,71.028,6.404
-2025-11-16 14:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,46.744,60.848,203.043,27.944
-2025-11-16 14:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.186,42.790,70.639,5.708
-2025-11-16 14:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.970,9.145,32.725,4.508
-2025-11-16 14:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.697,114.280,145.792,5.183
-2025-11-16 14:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.175,78.528,127.320,9.262
-2025-11-16 14:35,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 14:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.566,61.470,85.354,6.813
-2025-11-16 14:35,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 14:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.735,158.124,176.609,3.776
-2025-11-16 14:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.999,60.041,88.288,4.881
-2025-11-16 14:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.106,29.685,48.746,3.739
-2025-11-16 14:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,4.467,25.498,159.358,20.076
-2025-11-16 14:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.583,78.434,124.017,10.231
-2025-11-16 14:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.393,42.246,66.435,4.669
-2025-11-16 14:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,47.931,58.608,206.831,21.856
-2025-11-16 14:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,37.153,42.090,58.400,2.849
-2025-11-16 14:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,1.266,7.836,13.837,2.326
-2025-11-16 15:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.691,115.308,141.219,5.753
-2025-11-16 15:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.851,76.996,111.193,8.240
-2025-11-16 15:05,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 15:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.529,61.227,103.861,7.381
-2025-11-16 15:05,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 15:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.727,157.923,172.785,2.778
-2025-11-16 15:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.782,61.285,100.266,7.325
-2025-11-16 15:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.179,30.857,69.213,7.438
-2025-11-16 15:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,10.302,25.496,155.472,19.454
-2025-11-16 15:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.375,76.710,99.579,5.404
-2025-11-16 15:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.354,44.337,73.796,7.723
-2025-11-16 15:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,45.230,56.888,188.616,19.070
-2025-11-16 15:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.369,41.798,59.905,3.368
-2025-11-16 15:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,1.097,8.323,13.820,3.362
-2025-11-16 15:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.727,116.656,143.741,7.409
-2025-11-16 15:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.114,76.169,100.989,5.797
-2025-11-16 15:35,cre-er1-br01,AVE-CRE-PP01,ERROR: no round-trip (10.236.76.34) found - 100% packet loss - AVE-CRE-PP01 is down
-2025-11-16 15:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.720,62.777,115.699,9.878
-2025-11-16 15:35,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 15:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.772,157.668,168.780,2.172
-2025-11-16 15:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.360,60.642,85.587,5.732
-2025-11-16 15:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.144,29.212,54.546,3.773
-2025-11-16 15:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,11.080,24.028,161.721,20.191
-2025-11-16 15:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.405,80.286,160.995,14.777
-2025-11-16 15:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,37.368,43.760,65.636,5.770
-2025-11-16 15:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,44.790,61.192,199.160,27.757
-2025-11-16 15:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,37.206,42.956,64.659,4.913
-2025-11-16 15:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.694,6.425,16.775,3.950
-2025-11-16 16:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.675,114.940,143.654,6.004
-2025-11-16 16:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.109,76.581,121.279,7.456
-2025-11-16 16:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.823,69.987,125.172,10.770
-2025-11-16 16:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.531,61.841,100.860,7.328
-2025-11-16 16:05,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 16:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.717,158.337,180.605,4.520
-2025-11-16 16:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,57.057,59.841,104.667,6.594
-2025-11-16 16:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.145,29.853,58.614,5.997
-2025-11-16 16:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,8.980,25.359,156.525,19.787
-2025-11-16 16:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.334,77.652,113.533,7.950
-2025-11-16 16:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.502,43.320,65.721,5.895
-2025-11-16 16:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,48.052,57.667,166.552,17.504
-2025-11-16 16:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.241,42.790,68.634,5.389
-2025-11-16 16:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.862,8.097,37.869,4.871
-2025-11-16 16:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.688,115.636,144.220,6.592
-2025-11-16 16:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.211,75.909,98.708,4.777
-2025-11-16 16:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.747,68.118,88.212,3.770
-2025-11-16 16:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.639,62.131,104.818,8.301
-2025-11-16 16:35,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 16:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.729,157.693,169.643,2.191
-2025-11-16 16:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.771,59.224,84.686,3.927
-2025-11-16 16:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.104,29.787,55.019,4.365
-2025-11-16 16:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,6.799,25.973,164.286,20.712
-2025-11-16 16:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.247,76.929,104.964,5.426
-2025-11-16 16:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.547,43.108,74.034,6.622
-2025-11-16 16:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,47.101,59.268,201.427,22.039
-2025-11-16 16:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.287,43.176,69.645,5.418
-2025-11-16 16:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.950,8.650,55.212,9.211
-2025-11-16 17:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.676,114.940,133.618,4.483
-2025-11-16 17:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.156,76.963,139.936,9.983
-2025-11-16 17:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.952,68.919,93.929,5.459
-2025-11-16 17:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.584,62.073,107.060,8.711
-2025-11-16 17:05,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 17:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.761,157.500,168.128,1.746
-2025-11-16 17:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.779,60.163,75.195,4.036
-2025-11-16 17:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.146,30.782,55.058,5.730
-2025-11-16 17:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,4.932,22.926,46.326,6.020
-2025-11-16 17:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.729,80.182,116.612,10.370
-2025-11-16 17:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.585,43.742,72.067,6.455
-2025-11-16 17:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,45.092,57.232,199.916,20.898
-2025-11-16 17:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.337,43.159,58.966,4.049
-2025-11-16 17:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.944,8.388,33.663,4.978
-2025-11-16 17:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.667,114.917,144.707,5.759
-2025-11-16 17:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.253,76.305,96.573,4.707
-2025-11-16 17:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,64.026,68.448,89.577,3.906
-2025-11-16 17:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.594,61.300,86.164,5.871
-2025-11-16 17:35,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 17:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.723,157.848,176.278,2.930
-2025-11-16 17:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.361,60.483,90.301,5.745
-2025-11-16 17:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.203,29.589,60.284,5.198
-2025-11-16 17:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.846,26.003,171.445,23.214
-2025-11-16 17:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.302,77.697,116.555,7.733
-2025-11-16 17:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.863,42.820,67.149,4.321
-2025-11-16 17:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,36.177,57.236,195.558,20.809
-2025-11-16 17:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.872,42.748,60.969,4.273
-2025-11-16 17:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,5.045,10.561,57.054,7.759
-2025-11-16 18:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.726,114.820,134.617,4.867
-2025-11-16 18:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.952,76.159,109.303,5.490
-2025-11-16 18:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,64.446,67.339,75.197,1.961
-2025-11-16 18:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.519,62.121,106.707,7.621
-2025-11-16 18:05,ela-er1-br01,AVE-ELA-PP01,ERROR: no round-trip (10.236.76.32) found - 100% packet loss - AVE-ELA-PP01 is down
-2025-11-16 18:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.741,157.572,166.869,1.774
-2025-11-16 18:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,57.250,60.645,91.664,5.835
-2025-11-16 18:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.156,29.816,61.573,5.137
-2025-11-16 18:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.185,25.710,173.778,22.061
-2025-11-16 18:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.296,77.122,117.588,7.276
-2025-11-16 18:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.640,42.688,58.116,3.992
-2025-11-16 18:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,46.061,58.708,179.958,21.872
-2025-11-16 18:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.843,43.393,72.046,6.171
-2025-11-16 18:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.664,6.015,18.466,4.458
-2025-11-16 18:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.728,114.645,134.660,4.471
-2025-11-16 18:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.706,76.437,102.130,5.844
-2025-11-16 18:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.870,69.544,126.146,9.055
-2025-11-16 18:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.589,59.814,71.896,3.060
-2025-11-16 18:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,48.266,51.645,59.531,2.714
-2025-11-16 18:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.778,158.203,175.263,3.714
-2025-11-16 18:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.811,59.489,67.914,2.504
-2025-11-16 18:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.142,30.593,61.172,6.753
-2025-11-16 18:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,15.333,26.328,171.318,22.422
-2025-11-16 18:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.384,81.251,146.150,13.896
-2025-11-16 18:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.937,45.768,91.762,11.546
-2025-11-16 18:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,44.100,54.838,154.194,14.847
-2025-11-16 18:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.440,47.410,173.668,22.002
-2025-11-16 18:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.954,7.739,13.416,2.936
-2025-11-16 19:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.702,115.516,142.077,6.030
-2025-11-16 19:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.119,76.984,121.597,8.067
-2025-11-16 19:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.791,68.314,88.468,4.296
-2025-11-16 19:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.710,61.883,98.523,7.284
-2025-11-16 19:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,48.218,51.993,64.375,4.155
-2025-11-16 19:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.708,158.186,175.272,3.752
-2025-11-16 19:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.676,60.747,95.430,6.141
-2025-11-16 19:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.179,30.254,55.998,6.183
-2025-11-16 19:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.069,26.511,174.244,22.280
-2025-11-16 19:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.511,80.876,132.408,12.662
-2025-11-16 19:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.315,43.331,68.869,5.712
-2025-11-16 19:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,38.438,59.360,203.839,28.531
-2025-11-16 19:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.099,50.295,201.464,25.916
-2025-11-16 19:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,1.401,7.975,10.199,1.777
-2025-11-16 19:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.702,116.751,135.525,7.144
-2025-11-16 19:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.288,76.368,105.175,5.129
-2025-11-16 19:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.825,70.243,107.233,8.038
-2025-11-16 19:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.604,62.028,101.448,9.467
-2025-11-16 19:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,48.385,51.635,61.442,3.200
-2025-11-16 19:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.716,157.577,175.149,2.581
-2025-11-16 19:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.181,59.920,91.625,5.269
-2025-11-16 19:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.138,31.282,67.945,7.888
-2025-11-16 19:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,8.477,22.613,46.016,5.294
-2025-11-16 19:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.637,81.590,125.921,12.373
-2025-11-16 19:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.724,43.155,74.489,5.858
-2025-11-16 19:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,47.069,59.922,188.670,27.048
-2025-11-16 19:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.274,47.062,145.423,17.518
-2025-11-16 19:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.974,8.238,11.238,1.274
-2025-11-16 20:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.697,115.290,136.096,5.428
-2025-11-16 20:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.768,76.141,104.939,4.624
-2025-11-16 20:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.725,68.052,82.400,2.996
-2025-11-16 20:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.828,62.424,107.843,8.501
-2025-11-16 20:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,48.425,53.173,96.467,7.463
-2025-11-16 20:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.786,158.130,175.681,3.473
-2025-11-16 20:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.888,59.020,65.828,1.809
-2025-11-16 20:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.152,29.140,50.298,3.263
-2025-11-16 20:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.551,24.435,161.709,20.144
-2025-11-16 20:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.734,80.152,117.009,9.565
-2025-11-16 20:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.607,42.724,67.861,4.765
-2025-11-16 20:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,45.998,57.631,166.603,18.636
-2025-11-16 20:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.704,49.582,174.865,23.811
-2025-11-16 20:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.957,8.887,27.367,4.900
-2025-11-16 20:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.691,116.107,147.595,6.828
-2025-11-16 20:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.925,76.665,120.718,7.405
-2025-11-16 20:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.906,67.894,81.301,3.230
-2025-11-16 20:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.645,63.705,98.482,9.058
-2025-11-16 20:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,48.243,52.556,87.233,6.549
-2025-11-16 20:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.752,157.665,176.126,2.970
-2025-11-16 20:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.124,59.482,77.248,3.112
-2025-11-16 20:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.172,29.729,54.989,4.117
-2025-11-16 20:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.828,25.186,159.061,20.069
-2025-11-16 20:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.466,82.146,157.624,14.865
-2025-11-16 20:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.326,42.227,76.991,6.475
-2025-11-16 20:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,46.191,58.181,184.250,19.543
-2025-11-16 20:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,35.942,43.252,101.727,9.408
-2025-11-16 20:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.829,8.483,27.117,4.302
-2025-11-16 21:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.690,114.669,135.435,4.943
-2025-11-16 21:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.888,76.113,104.359,4.859
-2025-11-16 21:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.772,68.844,94.089,5.329
-2025-11-16 21:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.636,60.191,72.902,3.218
-2025-11-16 21:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,48.246,51.950,74.079,4.688
-2025-11-16 21:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.749,159.262,182.174,5.596
-2025-11-16 21:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.205,60.951,108.396,9.460
-2025-11-16 21:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.158,29.478,46.065,3.566
-2025-11-16 21:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,4.549,25.701,174.954,22.499
-2025-11-16 21:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.629,80.369,143.393,13.256
-2025-11-16 21:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.309,43.521,71.288,6.361
-2025-11-16 21:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,39.689,56.136,184.681,20.281
-2025-11-16 21:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.059,45.187,94.678,12.517
-2025-11-16 21:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,5.900,8.389,8.807,0.402
-2025-11-16 21:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.762,115.801,145.223,6.695
-2025-11-16 21:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.968,76.151,85.414,3.218
-2025-11-16 21:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.948,68.985,97.362,5.654
-2025-11-16 21:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.428,62.760,99.684,9.209
-2025-11-16 21:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,48.272,51.435,58.486,2.722
-2025-11-16 21:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.726,157.665,176.725,2.915
-2025-11-16 21:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.685,60.571,92.738,5.620
-2025-11-16 21:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.161,30.027,61.717,6.490
-2025-11-16 21:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.179,23.946,160.915,20.333
-2025-11-16 21:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.499,80.364,157.342,15.285
-2025-11-16 21:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.238,43.044,82.765,7.157
-2025-11-16 21:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,44.459,60.795,203.800,31.014
-2025-11-16 21:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.180,50.604,142.495,24.020
-2025-11-16 21:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,1.298,11.399,34.177,6.997
-2025-11-16 22:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.693,116.337,147.587,7.521
-2025-11-16 22:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.968,75.987,113.044,6.021
-2025-11-16 22:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.553,69.339,112.985,7.330
-2025-11-16 22:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.681,63.061,89.247,7.958
-2025-11-16 22:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,48.308,52.361,90.527,6.417
-2025-11-16 22:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.742,157.739,167.699,2.037
-2025-11-16 22:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.246,61.986,125.869,11.901
-2025-11-16 22:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.185,30.786,58.904,6.150
-2025-11-16 22:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,7.794,38.900,217.310,28.174
-2025-11-16 22:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.815,83.116,152.881,18.323
-2025-11-16 22:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,39.068,45.360,105.827,10.567
-2025-11-16 22:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,41.137,58.308,183.496,21.008
-2025-11-16 22:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.748,51.007,167.582,26.979
-2025-11-16 22:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.975,8.877,30.521,4.210
-2025-11-16 22:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.716,114.790,131.781,4.262
-2025-11-16 22:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,71.059,76.124,98.592,5.072
-2025-11-16 22:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.834,68.123,98.750,5.839
-2025-11-16 22:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.695,60.518,79.401,4.065
-2025-11-16 22:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,48.372,53.018,103.074,8.543
-2025-11-16 22:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.720,157.870,176.527,3.188
-2025-11-16 22:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.310,59.892,77.658,3.885
-2025-11-16 22:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.170,28.742,41.452,1.869
-2025-11-16 22:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.507,22.489,48.600,6.867
-2025-11-16 22:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.548,80.076,106.854,8.749
-2025-11-16 22:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.344,45.245,111.608,12.595
-2025-11-16 22:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,40.749,56.238,195.258,20.884
-2025-11-16 22:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.400,47.232,115.788,16.000
-2025-11-16 22:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.975,9.334,27.108,3.868
-2025-11-16 23:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.986,115.220,144.102,5.674
-2025-11-16 23:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.006,76.754,110.200,7.000
-2025-11-16 23:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.985,68.150,97.757,4.906
-2025-11-16 23:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.624,62.010,99.071,6.514
-2025-11-16 23:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,48.716,53.504,90.767,7.400
-2025-11-16 23:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.753,158.333,171.787,3.376
-2025-11-16 23:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.839,60.798,86.531,6.257
-2025-11-16 23:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.119,30.122,49.989,4.527
-2025-11-16 23:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,6.495,22.451,54.540,5.901
-2025-11-16 23:05,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.316,79.807,180.632,15.395
-2025-11-16 23:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.658,43.193,65.985,5.243
-2025-11-16 23:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,42.383,59.041,203.453,25.859
-2025-11-16 23:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.173,46.713,125.183,16.513
-2025-11-16 23:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.951,9.077,13.588,2.581
-2025-11-16 23:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.945,114.990,144.816,5.651
-2025-11-16 23:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.902,75.636,104.686,5.574
-2025-11-16 23:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.740,68.052,99.944,5.311
-2025-11-16 23:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.836,61.268,80.286,4.809
-2025-11-16 23:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,48.481,51.876,96.021,6.676
-2025-11-16 23:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,156.720,157.965,171.615,2.463
-2025-11-16 23:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.041,59.853,91.203,5.692
-2025-11-16 23:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.123,29.731,49.307,3.568
-2025-11-16 23:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.561,22.030,35.958,3.822
-2025-11-16 23:35,esp-er1-br01,SCL-ESP-PP01,min,avg,max,stddev,70.286,82.114,205.587,19.470
-2025-11-16 23:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.745,43.169,68.911,5.303
-2025-11-16 23:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,46.481,58.579,194.871,26.641
-2025-11-16 23:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.282,51.063,143.420,23.288
-2025-11-16 23:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.958,12.379,92.309,17.697
+2025-11-16 00:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.726,116.093,148.799,7.972
+2025-11-16 00:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.104,75.745,92.476,4.128
+2025-11-16 00:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.890,68.342,96.400,4.897
+2025-11-16 00:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.552,60.431,77.417,3.791
+2025-11-16 00:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.289,62.513,86.249,4.587
+2025-11-16 00:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.902,207.540,217.141,1.622
+2025-11-16 00:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.975,60.076,85.549,4.686
+2025-11-16 00:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 00:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.142,29.377,47.555,3.453
+2025-11-16 00:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,6.816,22.392,46.499,6.316
+2025-11-16 00:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,37.028,43.349,73.365,6.081
+2025-11-16 00:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,37.621,62.446,216.133,30.511
+2025-11-16 00:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.415,48.270,168.042,21.067
+2025-11-16 00:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.964,8.278,9.124,1.109
+2025-11-16 00:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.690,116.301,137.417,6.860
+2025-11-16 00:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.844,76.858,95.925,5.321
+2025-11-16 00:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.659,69.352,119.438,9.052
+2025-11-16 00:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.383,62.136,101.196,7.539
+2025-11-16 00:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.144,63.353,85.120,5.237
+2025-11-16 00:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.978,207.656,220.247,2.095
+2025-11-16 00:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.730,59.299,72.307,2.652
+2025-11-16 00:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 00:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.131,29.440,58.470,4.728
+2025-11-16 00:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,16.824,25.292,204.720,25.703
+2025-11-16 00:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.170,42.523,57.806,4.395
+2025-11-16 00:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,46.805,64.584,210.973,23.921
+2025-11-16 00:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.351,57.932,120.851,19.940
+2025-11-16 00:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.799,8.329,13.829,3.584
+2025-11-16 01:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.705,114.660,145.089,5.728
+2025-11-16 01:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.153,76.297,107.912,6.063
+2025-11-16 01:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,64.269,68.625,91.447,4.773
+2025-11-16 01:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.527,61.540,90.908,6.987
+2025-11-16 01:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.336,62.356,73.530,3.716
+2025-11-16 01:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.927,208.535,234.352,4.794
+2025-11-16 01:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.904,60.309,97.029,7.485
+2025-11-16 01:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 01:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.110,29.119,40.631,2.267
+2025-11-16 01:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.361,21.720,37.583,5.442
+2025-11-16 01:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.509,42.302,70.727,5.905
+2025-11-16 01:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,38.801,55.088,166.000,17.347
+2025-11-16 01:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.120,51.606,138.196,19.392
+2025-11-16 01:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.956,8.330,16.470,1.804
+2025-11-16 01:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.662,114.660,148.775,6.335
+2025-11-16 01:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.884,76.963,99.915,5.834
+2025-11-16 01:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,64.015,69.575,115.575,8.161
+2025-11-16 01:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.494,61.572,81.244,5.496
+2025-11-16 01:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.365,63.708,119.078,8.978
+2025-11-16 01:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.948,208.326,220.169,2.596
+2025-11-16 01:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.792,59.270,66.784,1.968
+2025-11-16 01:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 01:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.140,30.173,50.489,5.257
+2025-11-16 01:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.180,25.113,154.012,19.646
+2025-11-16 01:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.403,44.095,90.325,9.125
+2025-11-16 01:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,46.301,57.101,187.049,18.792
+2025-11-16 01:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.100,45.375,100.776,12.603
+2025-11-16 01:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.784,6.814,13.664,3.524
+2025-11-16 02:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.677,114.662,132.875,4.895
+2025-11-16 02:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.057,77.960,131.448,10.808
+2025-11-16 02:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.628,68.352,94.000,5.222
+2025-11-16 02:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.636,62.361,104.337,8.619
+2025-11-16 02:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.241,63.170,89.716,5.373
+2025-11-16 02:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.938,208.459,243.897,5.571
+2025-11-16 02:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.173,60.011,90.689,5.393
+2025-11-16 02:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 02:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.130,30.161,62.576,5.758
+2025-11-16 02:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,13.110,22.520,46.725,4.382
+2025-11-16 02:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.048,43.852,89.104,8.696
+2025-11-16 02:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,46.998,57.266,223.154,23.833
+2025-11-16 02:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.749,46.193,92.538,11.553
+2025-11-16 02:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.973,9.086,32.107,4.714
+2025-11-16 02:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.676,115.533,164.787,8.520
+2025-11-16 02:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.067,75.935,102.271,5.172
+2025-11-16 02:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.956,68.450,82.532,3.621
+2025-11-16 02:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.582,61.717,106.552,8.329
+2025-11-16 02:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.214,63.047,101.779,6.698
+2025-11-16 02:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.962,207.995,224.046,2.882
+2025-11-16 02:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.164,60.063,90.689,4.876
+2025-11-16 02:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 02:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.118,29.798,60.694,5.235
+2025-11-16 02:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,12.950,25.453,146.505,18.303
+2025-11-16 02:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.921,44.194,71.809,6.694
+2025-11-16 02:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,45.183,56.906,161.929,15.576
+2025-11-16 02:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.446,43.429,87.065,7.673
+2025-11-16 02:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,1.187,9.333,25.752,4.192
+2025-11-16 03:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.677,115.281,135.752,5.398
+2025-11-16 03:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.056,76.805,127.155,8.264
+2025-11-16 03:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.750,68.803,102.254,5.406
+2025-11-16 03:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.493,62.807,101.906,8.061
+2025-11-16 03:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.352,61.583,78.760,4.126
+2025-11-16 03:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.927,207.515,213.468,1.128
+2025-11-16 03:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,57.686,60.207,85.234,4.264
+2025-11-16 03:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 03:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.137,29.102,46.624,3.099
+2025-11-16 03:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,14.863,25.171,161.437,20.104
+2025-11-16 03:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.568,43.463,64.612,4.967
+2025-11-16 03:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,46.031,57.273,232.716,25.336
+2025-11-16 03:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.589,45.986,95.923,11.107
+2025-11-16 03:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.795,7.217,12.832,3.082
+2025-11-16 03:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.699,114.399,136.752,4.732
+2025-11-16 03:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.516,76.981,121.035,8.273
+2025-11-16 03:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.886,68.310,112.633,6.545
+2025-11-16 03:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.553,61.094,92.676,6.652
+2025-11-16 03:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.258,63.307,90.655,6.250
+2025-11-16 03:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.927,207.497,212.314,1.076
+2025-11-16 03:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.534,59.809,72.659,2.795
+2025-11-16 03:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 03:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.152,29.266,56.361,3.992
+2025-11-16 03:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.866,25.467,186.430,23.269
+2025-11-16 03:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.015,46.913,120.169,16.793
+2025-11-16 03:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,46.832,61.220,204.504,28.970
+2025-11-16 03:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.434,46.623,144.224,19.252
+2025-11-16 03:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.930,8.829,19.079,2.838
+2025-11-16 04:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.674,115.239,137.783,6.305
+2025-11-16 04:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.070,76.346,105.616,5.701
+2025-11-16 04:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,64.042,68.105,78.991,2.735
+2025-11-16 04:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.646,63.156,109.737,9.345
+2025-11-16 04:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.366,62.088,81.521,4.753
+2025-11-16 04:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.980,209.568,226.574,4.801
+2025-11-16 04:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.699,60.842,97.485,7.460
+2025-11-16 04:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 04:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.147,29.550,50.043,3.652
+2025-11-16 04:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.884,22.007,42.008,5.182
+2025-11-16 04:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.422,45.191,97.538,11.243
+2025-11-16 04:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,47.124,58.136,192.522,20.548
+2025-11-16 04:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.222,48.297,136.973,18.395
+2025-11-16 04:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,1.276,9.462,27.265,5.490
+2025-11-16 04:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.696,114.448,142.377,4.913
+2025-11-16 04:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.087,77.136,150.815,11.274
+2025-11-16 04:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.714,68.676,99.244,5.629
+2025-11-16 04:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.443,62.003,111.442,8.663
+2025-11-16 04:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.256,62.233,90.794,5.854
+2025-11-16 04:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.961,208.567,234.544,4.957
+2025-11-16 04:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.170,60.560,75.199,4.081
+2025-11-16 04:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 04:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.129,29.896,40.145,3.253
+2025-11-16 04:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.449,24.618,175.788,22.192
+2025-11-16 04:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.243,43.534,118.082,11.779
+2025-11-16 04:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,41.217,59.667,203.057,26.528
+2025-11-16 04:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.142,41.655,61.664,3.751
+2025-11-16 04:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.995,8.574,20.299,3.813
+2025-11-16 05:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.686,115.263,134.168,5.132
+2025-11-16 05:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.286,75.248,91.636,3.243
+2025-11-16 05:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.937,68.992,103.014,6.261
+2025-11-16 05:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.471,62.982,125.594,10.406
+2025-11-16 05:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.310,62.270,94.889,5.799
+2025-11-16 05:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.895,209.092,229.435,5.023
+2025-11-16 05:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.880,59.826,71.617,2.704
+2025-11-16 05:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 05:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.139,29.819,55.205,5.013
+2025-11-16 05:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.085,23.696,173.155,22.145
+2025-11-16 05:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,35.956,43.649,66.955,5.595
+2025-11-16 05:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,42.575,60.348,206.243,26.436
+2025-11-16 05:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.207,44.385,90.103,9.478
+2025-11-16 05:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.725,5.462,16.991,5.128
+2025-11-16 05:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.696,114.892,137.511,5.559
+2025-11-16 05:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.963,76.336,96.772,4.804
+2025-11-16 05:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,64.871,68.139,78.715,2.873
+2025-11-16 05:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.391,61.845,127.682,9.969
+2025-11-16 05:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.150,63.092,92.230,6.207
+2025-11-16 05:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.975,209.250,232.922,5.151
+2025-11-16 05:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.235,60.402,90.762,5.133
+2025-11-16 05:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 05:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.174,30.451,51.402,5.297
+2025-11-16 05:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.194,21.946,48.209,7.506
+2025-11-16 05:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.399,46.120,159.526,17.681
+2025-11-16 05:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,42.434,59.415,200.000,28.538
+2025-11-16 05:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.508,42.676,66.656,4.389
+2025-11-16 05:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.875,8.841,30.467,5.044
+2025-11-16 06:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.706,115.665,146.566,7.027
+2025-11-16 06:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.558,76.813,121.969,7.734
+2025-11-16 06:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,64.198,69.602,127.492,9.316
+2025-11-16 06:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.628,61.114,88.424,5.731
+2025-11-16 06:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.189,62.691,118.658,8.699
+2025-11-16 06:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.960,207.744,214.498,1.347
+2025-11-16 06:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.827,60.127,85.502,4.952
+2025-11-16 06:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 06:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.182,29.500,48.388,3.910
+2025-11-16 06:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.419,23.614,173.939,21.749
+2025-11-16 06:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.017,46.508,108.512,14.166
+2025-11-16 06:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,47.125,57.634,172.772,17.548
+2025-11-16 06:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.272,49.909,183.021,24.627
+2025-11-16 06:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.845,6.686,13.712,4.601
+2025-11-16 06:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.952,116.092,141.897,6.468
+2025-11-16 06:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.957,75.232,87.962,3.241
+2025-11-16 06:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.689,68.426,99.829,5.298
+2025-11-16 06:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.662,61.546,93.021,6.487
+2025-11-16 06:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.347,62.748,104.243,7.452
+2025-11-16 06:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.856,208.006,221.172,2.799
+2025-11-16 06:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.777,60.815,106.321,7.221
+2025-11-16 06:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 06:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.128,30.353,54.593,5.526
+2025-11-16 06:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,4.870,24.898,161.523,20.823
+2025-11-16 06:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.252,48.277,120.000,17.062
+2025-11-16 06:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,44.464,57.141,192.461,19.964
+2025-11-16 06:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.124,44.752,101.369,11.947
+2025-11-16 06:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.744,9.817,55.595,9.610
+2025-11-16 07:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.952,115.425,148.413,6.924
+2025-11-16 07:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.055,76.947,112.601,7.029
+2025-11-16 07:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.963,67.661,78.362,2.468
+2025-11-16 07:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.568,61.374,106.821,8.273
+2025-11-16 07:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.295,63.830,98.345,6.961
+2025-11-16 07:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.957,208.210,219.624,2.650
+2025-11-16 07:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.995,59.891,107.422,6.979
+2025-11-16 07:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 07:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.182,29.347,47.729,3.534
+2025-11-16 07:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,4.991,30.177,170.031,22.413
+2025-11-16 07:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.057,43.361,73.478,7.190
+2025-11-16 07:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,44.361,60.375,203.912,28.885
+2025-11-16 07:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,37.041,46.238,92.234,12.866
+2025-11-16 07:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.958,8.613,13.692,3.151
+2025-11-16 07:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.970,114.628,131.547,3.990
+2025-11-16 07:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.039,76.094,114.026,6.908
+2025-11-16 07:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.388,69.487,91.373,5.823
+2025-11-16 07:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.810,61.676,87.077,6.285
+2025-11-16 07:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.347,62.407,75.710,4.115
+2025-11-16 07:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.941,207.563,220.031,1.872
+2025-11-16 07:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.491,60.871,101.675,7.523
+2025-11-16 07:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 07:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.144,29.662,57.315,5.646
+2025-11-16 07:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.171,25.352,170.208,21.845
+2025-11-16 07:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,37.288,43.947,71.571,6.456
+2025-11-16 07:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,42.589,56.142,159.216,16.460
+2025-11-16 07:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.506,44.635,123.516,11.734
+2025-11-16 07:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.954,11.210,91.694,13.863
+2025-11-16 08:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.960,115.116,147.932,5.985
+2025-11-16 08:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.207,76.733,106.615,6.112
+2025-11-16 08:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.555,68.140,96.992,4.969
+2025-11-16 08:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.553,60.049,80.890,3.694
+2025-11-16 08:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.261,63.361,90.974,6.906
+2025-11-16 08:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.906,207.687,217.048,1.914
+2025-11-16 08:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.758,59.804,96.271,5.392
+2025-11-16 08:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 08:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.157,30.087,60.059,5.741
+2025-11-16 08:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.916,22.403,45.937,5.761
+2025-11-16 08:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.489,44.796,86.399,9.948
+2025-11-16 08:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,44.054,59.407,180.204,25.205
+2025-11-16 08:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.186,42.861,82.532,6.866
+2025-11-16 08:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.908,8.302,13.610,3.507
+2025-11-16 08:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.935,116.559,146.212,7.818
+2025-11-16 08:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.165,76.649,109.393,7.067
+2025-11-16 08:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.647,68.122,86.181,3.423
+2025-11-16 08:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.516,62.197,90.288,7.807
+2025-11-16 08:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.255,63.551,88.361,5.354
+2025-11-16 08:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.920,207.478,213.056,0.942
+2025-11-16 08:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.235,59.828,99.767,6.162
+2025-11-16 08:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 08:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.150,29.963,60.428,6.344
+2025-11-16 08:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,15.180,25.037,166.037,20.506
+2025-11-16 08:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.325,43.564,84.234,8.071
+2025-11-16 08:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,42.129,60.354,210.999,28.054
+2025-11-16 08:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,37.400,45.328,85.531,10.152
+2025-11-16 08:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.701,5.029,17.995,4.593
+2025-11-16 09:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.975,115.558,148.411,6.784
+2025-11-16 09:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.850,75.862,96.004,4.663
+2025-11-16 09:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.742,70.028,91.323,7.189
+2025-11-16 09:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.446,62.264,96.248,7.174
+2025-11-16 09:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.276,61.479,70.877,3.467
+2025-11-16 09:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.903,208.894,228.065,4.873
+2025-11-16 09:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.720,59.395,82.571,3.663
+2025-11-16 09:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 09:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.167,30.593,47.402,4.680
+2025-11-16 09:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,7.524,23.094,57.391,7.403
+2025-11-16 09:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.056,47.161,101.275,13.917
+2025-11-16 09:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,42.248,56.597,172.085,17.257
+2025-11-16 09:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.431,48.151,199.511,24.798
+2025-11-16 09:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,1.173,11.802,91.841,16.135
+2025-11-16 09:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.955,115.075,139.581,5.229
+2025-11-16 09:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.583,77.136,117.655,7.516
+2025-11-16 09:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.826,68.674,107.946,6.680
+2025-11-16 09:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.461,61.326,84.981,5.130
+2025-11-16 09:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.273,62.871,90.905,5.803
+2025-11-16 09:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.905,209.132,225.624,4.842
+2025-11-16 09:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.790,61.676,104.416,9.382
+2025-11-16 09:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 09:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.146,29.276,50.857,3.671
+2025-11-16 09:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,14.544,22.212,42.369,3.915
+2025-11-16 09:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.489,41.593,57.934,3.273
+2025-11-16 09:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,45.700,57.352,201.021,21.778
+2025-11-16 09:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.020,42.739,66.867,5.836
+2025-11-16 09:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.951,10.251,90.461,11.988
+2025-11-16 10:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.983,116.474,155.436,8.176
+2025-11-16 10:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.085,75.831,117.841,6.565
+2025-11-16 10:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,64.860,68.299,86.578,3.937
+2025-11-16 10:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.504,61.807,88.651,6.274
+2025-11-16 10:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.252,63.769,99.069,6.681
+2025-11-16 10:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.932,207.624,213.670,1.324
+2025-11-16 10:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.753,60.351,105.784,7.335
+2025-11-16 10:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 10:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.137,29.881,54.907,4.608
+2025-11-16 10:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.233,21.701,46.337,5.499
+2025-11-16 10:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.922,43.224,71.915,5.843
+2025-11-16 10:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,44.661,57.160,192.197,21.552
+2025-11-16 10:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.325,43.433,88.032,7.499
+2025-11-16 10:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.955,10.497,46.298,7.304
+2025-11-16 10:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.947,114.886,131.061,4.317
+2025-11-16 10:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.939,77.410,117.710,8.045
+2025-11-16 10:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.519,68.515,93.381,5.177
+2025-11-16 10:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.582,63.362,91.797,9.071
+2025-11-16 10:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.251,63.281,88.089,5.914
+2025-11-16 10:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.938,209.102,230.254,5.161
+2025-11-16 10:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.869,60.310,117.621,8.471
+2025-11-16 10:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 10:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.154,29.511,51.025,4.513
+2025-11-16 10:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.160,22.237,57.511,6.403
+2025-11-16 10:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,38.051,46.504,98.434,12.908
+2025-11-16 10:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,42.535,55.394,180.480,18.526
+2025-11-16 10:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.359,45.763,107.400,13.430
+2025-11-16 10:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,6.510,11.411,91.689,13.482
+2025-11-16 11:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.953,115.807,134.360,5.924
+2025-11-16 11:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.282,77.718,98.121,6.899
+2025-11-16 11:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.648,68.067,84.294,3.438
+2025-11-16 11:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.612,62.631,109.526,9.064
+2025-11-16 11:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.210,62.378,106.328,7.018
+2025-11-16 11:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.949,208.238,226.344,3.551
+2025-11-16 11:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.643,60.114,94.715,5.596
+2025-11-16 11:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 11:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.161,29.329,41.469,2.902
+2025-11-16 11:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,4.626,21.491,40.448,4.623
+2025-11-16 11:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,37.243,44.405,81.030,8.190
+2025-11-16 11:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,44.818,57.742,196.999,20.605
+2025-11-16 11:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.747,46.372,136.203,18.950
+2025-11-16 11:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.958,8.851,31.892,4.750
+2025-11-16 11:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.974,115.623,140.959,5.719
+2025-11-16 11:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.847,76.185,117.819,6.894
+2025-11-16 11:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.808,69.115,88.868,4.393
+2025-11-16 11:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.424,61.309,85.591,5.511
+2025-11-16 11:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.219,62.237,98.711,6.172
+2025-11-16 11:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.936,208.856,226.357,4.432
+2025-11-16 11:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.751,59.350,65.251,1.900
+2025-11-16 11:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 11:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.168,29.470,50.173,3.758
+2025-11-16 11:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.836,21.780,39.400,4.682
+2025-11-16 11:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.399,44.249,115.407,11.432
+2025-11-16 11:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,46.709,56.615,196.662,20.542
+2025-11-16 11:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.353,42.519,88.222,6.924
+2025-11-16 11:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,1.256,8.412,14.056,3.459
+2025-11-16 12:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.952,115.958,164.035,8.289
+2025-11-16 12:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.920,75.801,104.718,5.613
+2025-11-16 12:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,64.125,68.790,85.811,3.762
+2025-11-16 12:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.615,62.177,101.633,8.376
+2025-11-16 12:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.250,63.196,83.234,5.146
+2025-11-16 12:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.929,208.467,224.976,3.768
+2025-11-16 12:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.792,58.823,62.608,1.265
+2025-11-16 12:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 12:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.154,29.746,59.639,5.200
+2025-11-16 12:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.184,21.823,40.678,5.979
+2025-11-16 12:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.165,41.732,57.436,3.471
+2025-11-16 12:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,41.524,60.791,207.078,28.253
+2025-11-16 12:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.537,42.851,63.984,4.442
+2025-11-16 12:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,1.271,8.312,9.692,1.103
+2025-11-16 12:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.960,115.295,146.721,5.964
+2025-11-16 12:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.967,78.102,126.559,10.363
+2025-11-16 12:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.730,69.138,133.571,10.078
+2025-11-16 12:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.624,62.679,117.182,9.560
+2025-11-16 12:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.251,63.442,96.054,6.110
+2025-11-16 12:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.919,208.640,221.829,3.275
+2025-11-16 12:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,57.464,59.960,83.884,4.716
+2025-11-16 12:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 12:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.171,29.562,41.498,3.161
+2025-11-16 12:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,6.153,21.972,53.943,6.849
+2025-11-16 12:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.037,44.049,70.800,6.991
+2025-11-16 12:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,46.682,57.012,206.247,21.811
+2025-11-16 12:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.097,43.192,65.371,5.314
+2025-11-16 12:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.670,8.867,17.689,2.782
+2025-11-16 13:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.936,114.621,132.588,3.474
+2025-11-16 13:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.043,75.830,119.152,6.658
+2025-11-16 13:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.826,67.509,80.198,2.890
+2025-11-16 13:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.609,60.494,81.241,4.697
+2025-11-16 13:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.328,64.508,104.916,8.984
+2025-11-16 13:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.940,207.685,219.253,1.827
+2025-11-16 13:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.910,60.141,99.269,5.861
+2025-11-16 13:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 13:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.151,29.143,46.690,3.389
+2025-11-16 13:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.686,23.779,173.182,22.102
+2025-11-16 13:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.179,43.381,57.006,4.788
+2025-11-16 13:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,46.129,57.977,191.022,27.074
+2025-11-16 13:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.290,50.940,169.934,23.419
+2025-11-16 13:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.980,8.117,11.665,1.936
+2025-11-16 13:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.949,117.235,160.653,10.353
+2025-11-16 13:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.616,76.334,95.608,4.053
+2025-11-16 13:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.815,69.054,116.102,7.958
+2025-11-16 13:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.534,63.464,171.767,16.136
+2025-11-16 13:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.224,61.986,69.510,3.473
+2025-11-16 13:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.931,209.422,235.283,6.553
+2025-11-16 13:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.787,59.770,72.960,2.842
+2025-11-16 13:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 13:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.154,29.211,49.790,3.564
+2025-11-16 13:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.719,25.259,165.653,20.755
+2025-11-16 13:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.369,46.643,100.305,12.115
+2025-11-16 13:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,44.332,58.373,186.203,25.807
+2025-11-16 13:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.135,45.668,129.099,15.062
+2025-11-16 13:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.975,8.212,11.259,1.308
+2025-11-16 14:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.966,115.235,134.065,5.041
+2025-11-16 14:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.023,75.748,83.431,2.644
+2025-11-16 14:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.903,69.021,114.802,7.158
+2025-11-16 14:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.478,60.549,75.607,4.145
+2025-11-16 14:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.207,62.449,71.071,3.759
+2025-11-16 14:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.923,208.921,226.870,4.090
+2025-11-16 14:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.800,60.131,98.923,6.022
+2025-11-16 14:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 14:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.179,29.488,60.551,5.018
+2025-11-16 14:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,6.107,24.887,163.959,20.761
+2025-11-16 14:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,35.983,42.920,60.181,4.572
+2025-11-16 14:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,46.822,56.377,199.170,20.632
+2025-11-16 14:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.135,42.531,71.169,5.279
+2025-11-16 14:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.967,9.911,52.263,8.354
+2025-11-16 14:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.950,114.512,134.726,3.906
+2025-11-16 14:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.892,76.904,120.691,7.979
+2025-11-16 14:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.456,68.187,96.251,5.121
+2025-11-16 14:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.717,62.880,87.478,6.848
+2025-11-16 14:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.376,63.011,98.979,6.356
+2025-11-16 14:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.983,209.280,231.846,4.799
+2025-11-16 14:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.811,60.182,85.700,4.497
+2025-11-16 14:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 14:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.113,29.427,50.700,4.065
+2025-11-16 14:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,4.853,24.318,160.833,20.032
+2025-11-16 14:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.416,47.685,93.442,13.556
+2025-11-16 14:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,42.118,57.871,190.762,20.333
+2025-11-16 14:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.317,42.135,50.743,2.623
+2025-11-16 14:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,1.281,8.563,13.659,1.611
+2025-11-16 15:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.960,115.774,145.561,6.477
+2025-11-16 15:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.051,78.625,142.033,11.836
+2025-11-16 15:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.480,69.277,99.075,6.641
+2025-11-16 15:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.688,61.798,98.831,7.400
+2025-11-16 15:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.404,62.009,77.084,3.922
+2025-11-16 15:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.939,208.439,226.410,3.602
+2025-11-16 15:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.287,59.829,74.141,3.392
+2025-11-16 15:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 15:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.148,30.329,53.194,4.727
+2025-11-16 15:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.827,25.900,169.131,21.606
+2025-11-16 15:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.140,41.977,66.377,4.943
+2025-11-16 15:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,44.330,56.198,200.623,20.973
+2025-11-16 15:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.389,45.053,159.331,17.701
+2025-11-16 15:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.794,7.864,32.856,6.538
+2025-11-16 15:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,113.001,115.250,142.309,5.417
+2025-11-16 15:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.097,76.204,120.951,7.290
+2025-11-16 15:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.618,68.161,104.979,5.573
+2025-11-16 15:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.470,61.704,104.505,7.988
+2025-11-16 15:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.278,64.118,91.249,6.142
+2025-11-16 15:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.950,208.919,226.875,5.068
+2025-11-16 15:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.098,60.096,74.779,3.299
+2025-11-16 15:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 15:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.167,30.053,55.683,5.543
+2025-11-16 15:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.234,24.129,164.899,21.143
+2025-11-16 15:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.133,45.555,198.232,22.180
+2025-11-16 15:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,38.700,55.504,180.415,18.799
+2025-11-16 15:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.918,42.152,49.536,2.337
+2025-11-16 15:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.940,11.064,84.314,14.025
+2025-11-16 16:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.964,116.266,136.851,6.440
+2025-11-16 16:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.550,76.527,89.010,4.512
+2025-11-16 16:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.681,69.805,100.221,6.649
+2025-11-16 16:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.585,60.716,82.704,4.824
+2025-11-16 16:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.198,63.883,106.235,8.355
+2025-11-16 16:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.918,207.989,219.090,2.586
+2025-11-16 16:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.894,60.350,78.899,4.072
+2025-11-16 16:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 16:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.126,29.974,56.922,5.746
+2025-11-16 16:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.033,21.659,48.445,6.267
+2025-11-16 16:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.063,43.304,63.922,5.567
+2025-11-16 16:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,46.584,60.386,204.175,28.817
+2025-11-16 16:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.499,47.032,125.654,16.230
+2025-11-16 16:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.949,9.427,74.625,9.430
+2025-11-16 16:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.998,116.275,145.389,7.098
+2025-11-16 16:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.888,75.558,96.349,4.708
+2025-11-16 16:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.905,68.626,93.162,5.480
+2025-11-16 16:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.701,60.843,109.165,7.400
+2025-11-16 16:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.177,62.847,109.415,8.208
+2025-11-16 16:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.958,208.643,230.822,3.945
+2025-11-16 16:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.337,59.784,107.314,6.948
+2025-11-16 16:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 16:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.142,28.991,44.133,2.730
+2025-11-16 16:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,11.660,25.034,173.081,21.531
+2025-11-16 16:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.083,44.795,108.818,11.090
+2025-11-16 16:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,47.026,60.048,198.510,28.574
+2025-11-16 16:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.164,49.114,170.664,26.666
+2025-11-16 16:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,3.774,8.425,11.919,0.863
+2025-11-16 17:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.965,116.660,144.928,6.954
+2025-11-16 17:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.956,76.225,120.669,6.967
+2025-11-16 17:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.661,68.523,87.533,4.351
+2025-11-16 17:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.591,60.405,78.419,4.274
+2025-11-16 17:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.252,62.181,82.224,4.302
+2025-11-16 17:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.968,207.450,212.030,1.040
+2025-11-16 17:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.837,60.590,107.298,8.948
+2025-11-16 17:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 17:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.102,29.892,56.277,5.315
+2025-11-16 17:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.525,24.225,120.893,15.308
+2025-11-16 17:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.467,43.018,72.249,5.557
+2025-11-16 17:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,44.682,59.436,199.544,27.967
+2025-11-16 17:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.223,43.835,102.420,10.779
+2025-11-16 17:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.865,10.575,54.974,8.852
+2025-11-16 17:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.977,115.957,135.101,5.879
+2025-11-16 17:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.301,79.107,143.016,12.396
+2025-11-16 17:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.640,69.695,117.719,8.041
+2025-11-16 17:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.609,63.024,86.202,7.106
+2025-11-16 17:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.268,63.340,107.651,8.381
+2025-11-16 17:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.953,208.935,226.264,4.332
+2025-11-16 17:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,57.580,59.291,67.601,1.995
+2025-11-16 17:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 17:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.164,29.314,44.491,2.743
+2025-11-16 17:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.686,24.809,173.090,21.816
+2025-11-16 17:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.321,46.590,100.473,13.852
+2025-11-16 17:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,45.445,57.691,181.697,21.505
+2025-11-16 17:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,37.405,43.738,72.923,6.436
+2025-11-16 17:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.792,7.572,59.068,9.846
+2025-11-16 18:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.999,115.566,136.949,5.384
+2025-11-16 18:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.134,76.060,128.573,7.838
+2025-11-16 18:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.912,69.595,115.353,8.851
+2025-11-16 18:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.393,61.792,91.171,6.856
+2025-11-16 18:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.231,62.933,109.381,7.849
+2025-11-16 18:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.907,208.887,225.738,4.046
+2025-11-16 18:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.738,59.273,67.718,2.197
+2025-11-16 18:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 18:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.151,29.797,70.358,6.105
+2025-11-16 18:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.169,23.287,79.357,10.458
+2025-11-16 18:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.087,45.996,109.080,13.398
+2025-11-16 18:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,39.139,58.358,198.732,27.696
+2025-11-16 18:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.401,44.061,109.933,10.341
+2025-11-16 18:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.871,8.273,29.366,5.959
+2025-11-16 18:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.951,115.948,149.291,6.992
+2025-11-16 18:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.843,75.850,123.409,7.308
+2025-11-16 18:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.750,68.170,84.614,3.951
+2025-11-16 18:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.608,61.554,85.333,6.219
+2025-11-16 18:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.271,62.011,79.785,4.474
+2025-11-16 18:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.976,208.645,226.760,4.212
+2025-11-16 18:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.775,59.834,85.730,4.395
+2025-11-16 18:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 18:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.139,29.587,53.872,4.067
+2025-11-16 18:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,4.843,24.909,159.223,20.284
+2025-11-16 18:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.089,43.100,82.078,7.029
+2025-11-16 18:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,44.644,60.590,202.030,29.270
+2025-11-16 18:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.223,43.324,88.441,7.860
+2025-11-16 18:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.835,7.831,11.843,2.114
+2025-11-16 19:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.946,115.320,130.693,4.645
+2025-11-16 19:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.194,76.056,93.660,4.970
+2025-11-16 19:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,64.231,71.111,125.545,11.583
+2025-11-16 19:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.683,60.597,86.832,5.459
+2025-11-16 19:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.384,63.115,84.787,5.170
+2025-11-16 19:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.895,208.229,222.741,3.140
+2025-11-16 19:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,57.025,60.298,77.673,4.117
+2025-11-16 19:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 19:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.182,29.598,50.417,4.128
+2025-11-16 19:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.120,25.008,164.165,20.800
+2025-11-16 19:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.195,42.479,64.127,4.061
+2025-11-16 19:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,36.741,56.552,242.555,27.166
+2025-11-16 19:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.271,42.397,63.882,4.270
+2025-11-16 19:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.920,7.409,31.055,6.668
+2025-11-16 19:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.976,114.854,133.065,4.099
+2025-11-16 19:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.997,75.553,95.423,3.738
+2025-11-16 19:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,64.024,68.250,99.994,5.234
+2025-11-16 19:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.641,63.894,100.663,8.929
+2025-11-16 19:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.332,62.997,99.064,6.970
+2025-11-16 19:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.902,208.474,224.613,3.736
+2025-11-16 19:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,57.270,60.493,89.429,6.095
+2025-11-16 19:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 19:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.149,29.509,47.885,4.232
+2025-11-16 19:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,9.250,27.499,194.223,27.218
+2025-11-16 19:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.057,43.628,106.276,9.559
+2025-11-16 19:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,37.925,60.171,194.064,27.345
+2025-11-16 19:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.034,45.377,111.862,14.063
+2025-11-16 19:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,3.984,8.440,11.904,0.838
+2025-11-16 20:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.945,115.110,136.532,5.154
+2025-11-16 20:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.955,78.036,121.148,9.678
+2025-11-16 20:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,64.907,67.961,82.258,2.771
+2025-11-16 20:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.449,61.835,92.146,7.321
+2025-11-16 20:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.189,62.883,96.201,6.292
+2025-11-16 20:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.908,209.166,227.583,5.134
+2025-11-16 20:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.931,59.189,64.082,1.982
+2025-11-16 20:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 20:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.132,29.496,44.676,3.544
+2025-11-16 20:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,6.471,24.100,159.754,19.968
+2025-11-16 20:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,36.115,47.687,191.851,22.698
+2025-11-16 20:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,43.782,56.676,200.389,21.085
+2025-11-16 20:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,37.646,44.700,124.946,12.035
+2025-11-16 20:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.983,8.566,13.636,3.270
+2025-11-16 20:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.932,115.829,142.673,5.815
+2025-11-16 20:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.946,75.487,98.864,4.878
+2025-11-16 20:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.568,68.849,89.211,5.256
+2025-11-16 20:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.709,61.063,77.077,4.094
+2025-11-16 20:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.246,63.181,123.340,9.637
+2025-11-16 20:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.949,207.435,211.913,0.801
+2025-11-16 20:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.481,60.034,78.020,3.781
+2025-11-16 20:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 20:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.193,29.746,51.589,4.243
+2025-11-16 20:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,4.394,25.657,175.426,23.909
+2025-11-16 20:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,43.934,52.241,82.720,7.861
+2025-11-16 20:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,50.188,62.466,177.919,23.349
+2025-11-16 20:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.264,44.434,84.344,7.969
+2025-11-16 20:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,5.453,10.287,54.990,7.923
+2025-11-16 21:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.986,116.307,147.142,7.369
+2025-11-16 21:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.974,75.810,101.905,5.048
+2025-11-16 21:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,64.005,69.356,115.510,7.835
+2025-11-16 21:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.480,61.898,85.261,6.451
+2025-11-16 21:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.339,62.429,112.858,7.859
+2025-11-16 21:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.966,208.147,222.122,2.409
+2025-11-16 21:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.725,59.834,95.765,5.728
+2025-11-16 21:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 21:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.167,29.936,46.637,4.005
+2025-11-16 21:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.699,25.684,167.696,22.828
+2025-11-16 21:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,33.739,41.508,61.776,5.183
+2025-11-16 21:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,37.252,54.223,192.900,20.649
+2025-11-16 21:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.429,43.153,69.352,6.379
+2025-11-16 21:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,1.133,8.213,9.038,1.039
+2025-11-16 21:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.979,116.687,137.427,7.283
+2025-11-16 21:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.928,77.041,97.654,5.425
+2025-11-16 21:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.434,67.850,80.933,3.508
+2025-11-16 21:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.432,61.612,85.842,6.417
+2025-11-16 21:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.403,63.628,86.511,6.221
+2025-11-16 21:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.927,208.876,226.706,4.886
+2025-11-16 21:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,57.492,59.992,89.609,4.880
+2025-11-16 21:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 21:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.154,29.872,41.168,3.173
+2025-11-16 21:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.561,24.206,171.009,21.670
+2025-11-16 21:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,33.919,41.061,63.497,5.632
+2025-11-16 21:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,41.558,52.857,184.497,19.427
+2025-11-16 21:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.102,44.552,122.176,12.108
+2025-11-16 21:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.963,9.066,29.157,4.389
+2025-11-16 22:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.955,116.310,144.897,7.226
+2025-11-16 22:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.961,75.600,91.381,4.375
+2025-11-16 22:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.746,68.744,100.310,6.022
+2025-11-16 22:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.592,61.310,99.452,6.439
+2025-11-16 22:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.211,62.760,103.655,6.843
+2025-11-16 22:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.944,209.179,243.109,6.089
+2025-11-16 22:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,56.582,59.243,77.679,2.996
+2025-11-16 22:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 22:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.174,30.075,53.733,5.739
+2025-11-16 22:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,13.721,22.427,44.621,4.446
+2025-11-16 22:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,33.979,43.086,82.441,8.896
+2025-11-16 22:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,33.562,51.376,156.956,16.306
+2025-11-16 22:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.216,43.628,72.191,6.042
+2025-11-16 22:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,1.011,12.073,90.427,16.379
+2025-11-16 22:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,113.000,115.974,144.938,6.426
+2025-11-16 22:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.814,78.487,149.966,12.726
+2025-11-16 22:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.986,68.215,105.485,6.563
+2025-11-16 22:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.524,60.538,74.790,3.766
+2025-11-16 22:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.226,63.329,85.177,5.062
+2025-11-16 22:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.935,207.499,212.075,0.930
+2025-11-16 22:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.829,60.536,85.563,5.416
+2025-11-16 22:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 22:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.177,29.878,58.074,4.803
+2025-11-16 22:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,5.184,22.619,49.221,6.559
+2025-11-16 22:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,33.906,41.646,75.434,7.527
+2025-11-16 22:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,35.170,54.564,186.399,19.821
+2025-11-16 22:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.171,50.435,192.731,29.653
+2025-11-16 22:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.944,8.048,25.212,5.789
+2025-11-16 23:05,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.981,116.013,140.842,6.709
+2025-11-16 23:05,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,70.172,75.933,98.194,4.912
+2025-11-16 23:05,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.468,67.596,76.776,2.717
+2025-11-16 23:05,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.557,64.054,112.708,9.588
+2025-11-16 23:05,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.225,63.067,93.508,6.044
+2025-11-16 23:05,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.921,208.199,221.151,2.719
+2025-11-16 23:05,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,55.701,59.343,77.681,3.344
+2025-11-16 23:05,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 23:05,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.142,30.076,52.214,5.029
+2025-11-16 23:05,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,4.521,25.275,165.316,21.729
+2025-11-16 23:05,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,33.913,41.757,70.571,6.384
+2025-11-16 23:05,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,38.237,56.818,193.065,28.479
+2025-11-16 23:05,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,37.003,45.012,88.418,9.762
+2025-11-16 23:05,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,1.164,8.911,27.161,3.736
+2025-11-16 23:35,eas-er1-br01,ESP-EAS-PP01,min,avg,max,stddev,112.971,115.934,148.640,7.414
+2025-11-16 23:35,eas-er1-br01,MEX-EAS-PP01,min,avg,max,stddev,69.898,76.424,95.813,5.126
+2025-11-16 23:35,cre-er1-br01,AVE-CRE-PP01,min,avg,max,stddev,63.555,68.129,82.909,3.453
+2025-11-16 23:35,56m-er1-br01,AVE-56M-PP01,min,avg,max,stddev,57.545,66.671,88.894,9.125
+2025-11-16 23:35,ela-er1-br01,AVE-ELA-PP01,min,avg,max,stddev,58.309,62.552,82.660,5.027
+2025-11-16 23:35,esv-er1-br01,BDE-ESV-PP01,min,avg,max,stddev,206.960,208.316,219.520,2.553
+2025-11-16 23:35,esv-er1-br01,AVE-ESV-PP01,min,avg,max,stddev,57.601,60.690,102.768,6.911
+2025-11-16 23:35,esp-er1-br01,SCL-ESP-PP01,ERROR: unable to determine source(10.236.80.65
+10.236.81.65
+10.236.82.65
+10.236.83.65) or destination() for address 10.236.80.65/31
+10.236.81.65/31
+10.236.82.65/31
+10.236.83.65/31 on esp-er1-br01 interface xe-0/0/2
+xe-0/0/3.6
+2025-11-16 23:35,esp-er1-br01,ESP-BDE-PP01,min,avg,max,stddev,28.171,29.643,53.088,4.236
+2025-11-16 23:35,esp-er1-br01,SAO-ESP-PP01,min,avg,max,stddev,10.909,25.857,156.960,20.873
+2025-11-16 23:35,esp-er1-br01,BDE-ESP-PP01,min,avg,max,stddev,33.942,43.198,91.469,10.976
+2025-11-16 23:35,bde-bd2-br01,SAO-BDE-PP01,min,avg,max,stddev,36.416,55.505,188.931,26.758
+2025-11-16 23:35,bde-bd2-br01,SCL-BDE-PP01,min,avg,max,stddev,36.449,42.788,64.822,4.997
+2025-11-16 23:35,bde-bd2-br01,BDE-BD2-PP01,min,avg,max,stddev,0.967,8.105,13.910,3.703
