@@ -62,6 +62,11 @@ ARRAY_ALLOWED_HOSTS_HTTPS = [
     "https://circuits-status.net.wbd.com",
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://circuits-status.net.wbd.com"
+]
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
 # CORS definitions
 if PRODUCTION == "1":
     CORS_ALLOW_ALL_ORIGINS = False
