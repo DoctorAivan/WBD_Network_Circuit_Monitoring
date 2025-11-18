@@ -9,7 +9,7 @@
 # LOG_DIR="/Volumes/SSD1/dev/WM_tntsports_2025/WBD_logs_tracking/backend/logs"
 LOG_DIR="/home/ivillarroel_sso/apps/WBD_Network_Circuit_Monitoring/logs"
 
-API_URL="http://localhost/api/logs-add/"
+API_URL="https://circuits-status.net.wbd.com/api/logs-add/"
 API_KEY="123456789TOKEN"
 CONTENT_TYPE="text/plain"
 SCRIPT_LOG="/home/ivillarroel_sso/apps/WBD_Network_Circuit_Monitoring/log_uploader.log"
