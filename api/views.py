@@ -320,16 +320,13 @@ class LogoutInView(views.APIView):
         resp = Response({"detail": "Logged out"})
 
         resp.delete_cookie(
-            'sessionid',
+            key='sessionid',
             path='/',
-            domain=None,
-            secure=True,
-            httponly=True,
-            samesite='Lax'
+            domain=None
         )
 
         resp.delete_cookie(
-            'csrftoken',
+            key='csrftoken',
             path='/',
             domain=None
         )
