@@ -12,7 +12,8 @@ from api.views import (
     CircuitViewSet,
 
     SignUpView,
-    SignInView
+    SignInView,
+    LogoutInView
 )
 
 router = SimpleRouter(trailing_slash=False)
@@ -30,4 +31,6 @@ urlpatterns = [
 
     path('sign-up', SignUpView.as_view(), name='sign-up'),
     path('sign-in', SignInView.as_view(), name='sign-in'),
+    path('logout', LogoutInView.as_view(), name='logout'),
+
 ]

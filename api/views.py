@@ -6,7 +6,7 @@ from django.utils import timezone
 from django.utils.dateparse import parse_datetime, parse_date
 from django.db.models import OuterRef, Subquery
 from django.contrib.auth.models import User
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -310,3 +310,28 @@ class SignInView(views.APIView):
 
             # Send response
             return Response(response, status=status.HTTP_403_FORBIDDEN)
+
+# Logout Action
+class LogoutInView(views.APIView):
+
+    def post(self, request):
+
+        logout(request)
+        resp = Response({"detail": "Logged out"})
+
+        resp.delete_cookie(
+            'sessionid',
+            path='/',
+            domain=None,
+            secure=True,
+            httponly=True,
+            samesite='Lax'
+        )
+
+        resp.delete_cookie(
+            'csrftoken',
+            path='/',
+            domain=None
+        )
+
+        return resp
