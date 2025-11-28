@@ -7,7 +7,7 @@
  sft list-servers
 
  USER :
- Network.Platform
+ network.platform@wbd.com
  uk6Ar.OB@6<_
 
 CNN Tiene una deuda grande con Warner

@@ -7,7 +7,7 @@
 
 # CONFIGURATION
 # LOG_DIR="/Volumes/SSD1/dev/WM_tntsports_2025/WBD_logs_tracking/backend/logs"
-LOG_DIR="/home/ivillarroel_sso/apps/WBD_Network_Circuit_Monitoring/logs"
+LOG_DIR="/tmp/circuits-status/logs"
 
 API_URL="https://circuits-status.net.wbd.com/api/logs-add/"
 API_KEY="123456789TOKEN"
