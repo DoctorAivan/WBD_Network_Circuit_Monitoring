@@ -47,7 +47,7 @@ send_file() {
 inotifywait -m -e close_write,create,modify "$LOG_DIR" --format '%w%f' | while read FILE
 do
     # Only read txt files
-    if [[ "$FILE" == *.txt ]]; then
+    if [[ "$FILE" == *.tmp ]]; then
         send_file "$FILE"
     fi
 done
