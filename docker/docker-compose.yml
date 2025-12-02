@@ -27,9 +27,9 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ../frontend:/usr/share/nginx/html     # tu build de React
-      - ../nginx/conf.d:/etc/nginx/conf.d     # configuración personalizada
-      - ../certs:/etc/ssl/certs               # certificados SSL
+      - ../frontend:/usr/share/nginx/html
+      - ../nginx/conf.d:/etc/nginx/conf.d
+      - ../certs:/etc/ssl/certs
     depends_on:
       - backend
 
@@ -40,7 +40,7 @@ services:
     container_name: wbd_logs_tracking_backend
     restart: always
     environment:
-      - PRODUCTION=0
+      - PRODUCTION=1
     expose:
       - 8000
     depends_on:

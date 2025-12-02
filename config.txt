@@ -10,6 +10,17 @@
  network.platform@wbd.com
  uk6Ar.OB@6<_
 
+ systemctl status post_to_api
+
+ source host
+
+Deamon :
+strlapnetadm02.net.wbd.com
+
 CNN Tiene una deuda grande con Warner
 Dalef se fuciona con CNN
 Atera media tiene su mayoria de planta externalizado
+
+
+-rw-r--r--.  1 nirole nirole  27678 Nov 28 10:36 ping-251128.tmp
+-rw-r--r--.  1 nirole nirole  31459 Nov 28 12:06 ping-251128.tmp

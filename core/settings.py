@@ -51,14 +51,12 @@ CORS_ALLOW_HEADERS = [
 ]
 
 ARRAY_ALLOWED_HOSTS = [
-    "localhost",
-    "strplnetcirstatus001v.inf.wbd.com",
+    #"localhost",
     "circuits-status.net.wbd.com",
 ]
 
 ARRAY_ALLOWED_HOSTS_HTTPS = [
-    "http://localhost",
-    "http://strplnetcirstatus001v.inf.wbd.com",
+    #"http://localhost",
     "https://circuits-status.net.wbd.com",
 ]
 
