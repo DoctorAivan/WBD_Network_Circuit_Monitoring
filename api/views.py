@@ -221,7 +221,7 @@ class LastLogPerSourceView(APIView):
         return Response(serializer.data, status=status.HTTP_200_OK)
     
     def get(self, request):
-        today = timezone.now().date()
+        today = timezone.now().replace(hour=0, minute=0, second=0, microsecond=0)
 
         latest_log_subquery = (
             ServerLog.objects
