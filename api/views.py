@@ -2,7 +2,7 @@ import csv
 import io
 
 from django.http import HttpResponse
-from django.utils import timezone
+from django.utils import timezone as dj_timezone
 from django.utils.dateparse import parse_datetime, parse_date
 from django.db.models import OuterRef, Subquery
 from django.contrib.auth.models import User
@@ -221,7 +221,9 @@ class LastLogPerSourceView(APIView):
         return Response(serializer.data, status=status.HTTP_200_OK)
     
     def get(self, request):
-        today = timezone.now().replace(hour=0, minute=0, second=0, microsecond=0)
+        today = dj_timezone.now().replace(
+            hour=0, minute=0, second=0, microsecond=0
+        )
 
         latest_log_subquery = (
             ServerLog.objects
