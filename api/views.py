@@ -199,7 +199,7 @@ class ServerLogQueryView(APIView):
 # Last source created
 class LastLogPerSourceView(APIView):
 
-    def get_backup(self, request):
+    def get(self, request):
         latest_log_subquery = (
             ServerLog.objects
             .filter(
@@ -220,7 +220,7 @@ class LastLogPerSourceView(APIView):
         serializer = ServerLogSerializer(queryset, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
     
-    def get(self, request):
+    def get_backup(self, request):
         today = dj_timezone.now().replace(
             hour=0, minute=0, second=0, microsecond=0
         )
