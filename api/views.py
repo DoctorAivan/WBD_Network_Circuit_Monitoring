@@ -228,7 +228,7 @@ class LastLogPerSourceView(APIView):
             .filter(
                 source_host=OuterRef("source_host"),
                 circuit=OuterRef("circuit"),
-                created_at__date__gte=today
+                timestamp__date__gte=today
             )
             .order_by("-timestamp")
         )
@@ -237,7 +237,7 @@ class LastLogPerSourceView(APIView):
             ServerLog.objects
             .filter(
                 pk=Subquery(latest_log_subquery.values("pk")[:1]),
-                created_at__date__gte=today
+                timestamp__date__gte=today
             )
             .select_related("circuit")
             .order_by("source_host", "circuit__target_host")
