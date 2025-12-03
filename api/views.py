@@ -199,7 +199,7 @@ class ServerLogQueryView(APIView):
 # Last source created
 class LastLogPerSourceView(APIView):
 
-    def get(self, request):
+    def get_backup(self, request):
         latest_log_subquery = (
             ServerLog.objects
             .filter(
@@ -214,6 +214,32 @@ class LastLogPerSourceView(APIView):
             ServerLog.objects
             .filter(pk=Subquery(latest_log_subquery.values("pk")[:1]))
             .select_related("circuit")  # optimiza el acceso a circuit
+            .order_by("source_host", "circuit__target_host")
+        )
+
+        serializer = ServerLogSerializer(queryset, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    
+    def get(self, request):
+        today = timezone.now().date()
+
+        latest_log_subquery = (
+            ServerLog.objects
+            .filter(
+                source_host=OuterRef("source_host"),
+                circuit=OuterRef("circuit"),
+                created_at__date__gte=today
+            )
+            .order_by("-timestamp")
+        )
+
+        queryset = (
+            ServerLog.objects
+            .filter(
+                pk=Subquery(latest_log_subquery.values("pk")[:1]),
+                created_at__date__gte=today
+            )
+            .select_related("circuit")
             .order_by("source_host", "circuit__target_host")
         )
 
