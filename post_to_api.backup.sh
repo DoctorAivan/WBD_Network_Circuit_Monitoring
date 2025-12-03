@@ -6,13 +6,13 @@
 # --------------------------------------------
 
 # CONFIGURATION
-# LOG_DIR="/Volumes/SSD1/dev/WM_tntsports_2025/WBD_logs_tracking/backend/logs"
-LOG_DIR="/home/ivillarroel_sso/apps/WBD_Network_Circuit_Monitoring/logs"
+LOG_DIR="/Volumes/SSD1/dev/WM_tntsports_2025/WBD_logs_tracking/backend/logs"
+# LOG_DIR="/home/ivillarroel_sso/apps/WBD_Network_Circuit_Monitoring/logs"
 
 API_URL="http://localhost/api/logs-add/"
 API_KEY="123456789TOKEN"
 CONTENT_TYPE="text/plain"
-SCRIPT_LOG="/home/ivillarroel_sso/apps/WBD_Network_Circuit_Monitoring/log_uploader.log"
+SCRIPT_LOG="/Volumes/SSD1/dev/WM_tntsports_2025/WBD_logs_tracking/backend/log_uploader.log"
 
 echo "# Starting log monitor #"
 
@@ -44,7 +44,6 @@ send_file() {
         }
 }
 
-"""
 
 # MACOS - Use fswatch to listen for changes in logs directory
 fswatch -0 "$LOG_DIR" | while IFS= read -r -d "" FILE
@@ -56,7 +55,6 @@ do
 done
 
 """
-
 # LINUX - Use inotifywait to listen for changes in logs directory
 inotifywait -m -e close_write,create,modify "$LOG_DIR" --format '%w%f' | while read FILE
 do
@@ -65,3 +63,5 @@ do
         send_file "$FILE"
     fi
 done
+
+"""
