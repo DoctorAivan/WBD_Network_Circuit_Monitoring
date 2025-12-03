@@ -40,7 +40,7 @@ services:
     container_name: wbd_logs_tracking_backend
     restart: always
     environment:
-      - PRODUCTION=1
+      - PRODUCTION=0
     expose:
       - 8000
     depends_on:
