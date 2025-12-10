@@ -3,6 +3,8 @@ import io
 
 from django.http import HttpResponse
 from django.utils import timezone as dj_timezone
+from django.core.cache import cache
+from datetime import timedelta
 from django.utils.dateparse import parse_datetime, parse_date
 from django.db.models import OuterRef, Subquery
 from django.contrib.auth.models import User
@@ -199,38 +201,22 @@ class ServerLogQueryView(APIView):
 # Last source created
 class LastLogPerSourceView(APIView):
 
-    def get_backup(self, request):
-        latest_log_subquery = (
-            ServerLog.objects
-            .filter(
-                source_host=OuterRef("source_host"),
-                circuit=OuterRef("circuit")
-            )
-            .order_by("-timestamp")
-        )
-
-        # Consulta principal: selecciona el registro más reciente de cada par
-        queryset = (
-            ServerLog.objects
-            .filter(pk=Subquery(latest_log_subquery.values("pk")[:1]))
-            .select_related("circuit")
-            .order_by("source_host", "circuit__target_host")
-        )
-
-        serializer = ServerLogSerializer(queryset, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
-    
     def get(self, request):
+
+        # Hoy a las 00:00
         today_start = dj_timezone.now().replace(
             hour=0, minute=0, second=0, microsecond=0
         )
+
+        # Ayer a las 00:00
+        yesterday_start = today_start - timedelta(days=1)
 
         latest_log_subquery = (
             ServerLog.objects
             .filter(
                 source_host=OuterRef("source_host"),
                 circuit=OuterRef("circuit"),
-                timestamp__gte=today_start
+                timestamp__gte=yesterday_start
             )
             .order_by("-timestamp")
         )
