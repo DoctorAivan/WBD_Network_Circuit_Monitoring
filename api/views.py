@@ -229,7 +229,14 @@ class LastLogPerSourceView(APIView):
         )
 
         serializer = ServerLogSerializer(queryset, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
+        last_added = ServerLog.objects.first()
+
+        response = {
+            'updated' : last_added.timestamp,
+            'logs' : serializer.data
+        }
+
+        return Response(response, status=status.HTTP_200_OK)
 
 #       #       #       #       #       #       #       #       #       #       #       #
 
