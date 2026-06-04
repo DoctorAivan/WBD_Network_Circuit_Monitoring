@@ -5,6 +5,7 @@ __pycache__/
 json/*
 **/.DS_Store
 logs/*
+config.txt
 log_uploader.log
 post_to_api.backup.sh
 post_to_api.sh
