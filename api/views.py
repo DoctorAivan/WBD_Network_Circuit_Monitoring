@@ -6,7 +6,7 @@ from django.utils import timezone as dj_timezone
 from django.core.cache import cache
 from datetime import timedelta
 from django.utils.dateparse import parse_datetime, parse_date
-from django.db.models import OuterRef, Subquery
+from django.db.models import OuterRef, Subquery, Q
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 
@@ -131,8 +131,10 @@ class ServerLogQueryView(APIView):
 
         # Query params
         specific_date = request.query_params.get("timestamp")
-        start = request.query_params.get("start")
-        end = request.query_params.get("end")
+        date_start = request.query_params.get("date_start") or request.query_params.get("start")
+        date_end = request.query_params.get("date_end") or request.query_params.get("end")
+        time_start = request.query_params.get("time_start")
+        time_end = request.query_params.get("time_end")
         source = request.query_params.get("source_host")
         target = request.query_params.get("target_host")
 
@@ -152,23 +154,55 @@ class ServerLogQueryView(APIView):
             except Exception:
                 pass
 
-        # Create date start range filter
-        if start:
+        # Filter by date ranges
+        if date_start:
             try:
-                start_date = parse_date(start) or parse_datetime(start)
-                if start_date:
-                    logs = logs.filter(timestamp__gte=start_date)
+                parsed_date = parse_date(date_start)
+                if parsed_date:
+                    logs = logs.filter(timestamp__date__gte=parsed_date)
             except Exception:
                 pass
 
-        # Create date end range filter
-        if end:
+        if date_end:
             try:
-                end_date = parse_date(end) or parse_datetime(end)
-                if end_date:
-                    logs = logs.filter(timestamp__lte=end_date)
+                parsed_date = parse_date(date_end)
+                if parsed_date:
+                    logs = logs.filter(timestamp__date__lte=parsed_date)
             except Exception:
                 pass
+
+        # Filter by daily time window
+        parsed_time_start = None
+        if time_start:
+            try:
+                parts = [int(p) for p in time_start.split(":")]
+                if len(parts) == 2:
+                    parsed_time_start = datetime.min.time().replace(hour=parts[0], minute=parts[1])
+                elif len(parts) >= 3:
+                    parsed_time_start = datetime.min.time().replace(hour=parts[0], minute=parts[1], second=parts[2])
+            except Exception:
+                pass
+
+        parsed_time_end = None
+        if time_end:
+            try:
+                parts = [int(p) for p in time_end.split(":")]
+                if len(parts) == 2:
+                    parsed_time_end = datetime.min.time().replace(hour=parts[0], minute=parts[1], second=59)
+                elif len(parts) >= 3:
+                    parsed_time_end = datetime.min.time().replace(hour=parts[0], minute=parts[1], second=parts[2])
+            except Exception:
+                pass
+
+        if parsed_time_start and parsed_time_end:
+            if parsed_time_start <= parsed_time_end:
+                logs = logs.filter(timestamp__time__range=(parsed_time_start, parsed_time_end))
+            else:
+                logs = logs.filter(Q(timestamp__time__gte=parsed_time_start) | Q(timestamp__time__lte=parsed_time_end))
+        elif parsed_time_start:
+            logs = logs.filter(timestamp__time__gte=parsed_time_start)
+        elif parsed_time_end:
+            logs = logs.filter(timestamp__time__lte=parsed_time_end)
 
         # Create source filter
         if source:
@@ -183,13 +217,68 @@ class ServerLogQueryView(APIView):
 
         # Create response
         groups = GroupSerializer(groups, many=True)
-        circuit = CircuitSerializer(circuit)
-        logs = ServerLogChartSerializer(logs, many=True)
+
+        # Get absolute latest log of this circuit to calculate its current status
+        latest_log = ServerLog.objects.filter(circuit=circuit).order_by("-timestamp").first()
+
+        # Calculate average timestamp of all circuits to detect Down status
+        latest_logs_subquery = (
+            ServerLog.objects
+            .filter(
+                source_host=OuterRef("source_host"),
+                circuit=OuterRef("circuit")
+            )
+            .order_by("-timestamp")
+        )
+        all_latest_queryset = (
+            ServerLog.objects
+            .filter(pk=Subquery(latest_logs_subquery.values("pk")[:1]))
+        )
+        epochs = [log.timestamp.timestamp() for log in all_latest_queryset if log.timestamp]
+        is_db_aware = False
+        if all_latest_queryset.exists() and all_latest_queryset[0].timestamp:
+            is_db_aware = dj_timezone.is_aware(all_latest_queryset[0].timestamp)
+
+        if epochs:
+            avg_epoch = sum(epochs) / len(epochs)
+            if is_db_aware:
+                avg_datetime = datetime.fromtimestamp(avg_epoch, tz=timezone.utc)
+            else:
+                avg_datetime = datetime.utcfromtimestamp(avg_epoch)
+        else:
+            avg_datetime = dj_timezone.now() if is_db_aware else datetime.utcnow()
+
+        if latest_log:
+            if latest_log.timestamp and latest_log.timestamp < avg_datetime:
+                circuit_status_name = "down"
+            elif latest_log.min_value <= circuit.range_down:
+                circuit_status_name = "worker"
+            else:
+                circuit_status_name = "protected"
+        else:
+            circuit_status_name = "unknown"
+
+        circuit_data = CircuitSerializer(circuit).data
+        circuit_data["status_name"] = circuit_status_name
+
+        # Serialize and add status_name to logs
+        logs_data = []
+        for log in logs:
+            log_serialized = ServerLogChartSerializer(log).data
+
+            # Classify as worker or protected
+            if log.min_value <= circuit.range_down:
+                status_name = "worker"
+            else:
+                status_name = "protected"
+
+            log_serialized["status_name"] = status_name
+            logs_data.append(log_serialized)
 
         response = {
             "groups" : groups.data,
-            "circuit" : circuit.data,
-            "logs" : logs.data
+            "circuit" : circuit_data,
+            "logs" : logs_data
         }
 
         print( response )
@@ -203,20 +292,11 @@ class LastLogPerSourceView(APIView):
 
     def get(self, request):
 
-        # Hoy a las 00:00
-        today_start = dj_timezone.now().replace(
-            hour=0, minute=0, second=0, microsecond=0
-        )
-
-        # Ayer a las 00:00
-        yesterday_start = today_start - timedelta(days=1)
-
         latest_log_subquery = (
             ServerLog.objects
             .filter(
                 source_host=OuterRef("source_host"),
-                circuit=OuterRef("circuit"),
-                timestamp__gte=yesterday_start
+                circuit=OuterRef("circuit")
             )
             .order_by("-timestamp")
         )
@@ -228,12 +308,57 @@ class LastLogPerSourceView(APIView):
             .order_by("source_host", "circuit__target_host")
         )
 
-        serializer = ServerLogSerializer(queryset, many=True)
-        last_added = ServerLog.objects.first()
+        # Convert timestamps to epoch floats to compute average
+        epochs = [log.timestamp.timestamp() for log in queryset if log.timestamp]
+
+        # Check if database returns aware datetimes
+        is_db_aware = False
+        if queryset.exists() and queryset[0].timestamp:
+            is_db_aware = dj_timezone.is_aware(queryset[0].timestamp)
+
+        if epochs:
+            avg_epoch = sum(epochs) / len(epochs)
+            if is_db_aware:
+                avg_datetime = datetime.fromtimestamp(avg_epoch, tz=timezone.utc)
+            else:
+                avg_datetime = datetime.utcfromtimestamp(avg_epoch)
+        else:
+            avg_datetime = dj_timezone.now() if is_db_aware else datetime.utcnow()
+
+        logs_data = []
+        worker_count = 0
+        protected_count = 0
+        down_count = 0
+
+        for log in queryset:
+            log_serialized = ServerLogSerializer(log).data
+
+            # Classify circuit state
+            if log.timestamp and log.timestamp < avg_datetime:
+                status_name = "down"
+                down_count += 1
+            elif log.min_value <= log.circuit.range_down:
+                status_name = "worker"
+                worker_count += 1
+            else:
+                status_name = "protected"
+                protected_count += 1
+
+            log_serialized["status_name"] = status_name
+            log_serialized["status"] = (status_name == "protected")
+            logs_data.append(log_serialized)
+
+        last_added = queryset.order_by("-timestamp").first() if queryset.exists() else None
+        last_updated_time = last_added.timestamp if last_added else dj_timezone.now()
 
         response = {
-            'updated' : last_added.timestamp,
-            'logs' : serializer.data
+            'updated': last_updated_time,
+            'logs': logs_data,
+            'totals': {
+                'worker': worker_count,
+                'protected': protected_count,
+                'down': down_count
+            }
         }
 
         return Response(response, status=status.HTTP_200_OK)
@@ -309,7 +434,8 @@ class SignInView(views.APIView):
             login(request, user)
 
             # Get token
-            token = Token.objects.get(user=user)
+            #token = Token.objects.get(user=user)
+            token, _ = Token.objects.get_or_create(user=user)
 
             # Create json response
             response = {

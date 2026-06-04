@@ -1,26 +1,50 @@
 # PATH  |   PRODUCTION OR PROTECTED
 
- sft enroll --team discovery
- sft login
- sft list-servers
- ssh strplnetcirstatus001v.inf.wbd.com
- sft list-servers
+sft enroll --team discovery
+sft login
+sft list-servers
+ssh strplnetcirstatus001v.inf.wbd.com
+sft list-servers
 
- USER :
- network.platform@wbd.com
- uk6Ar.OB@6<_
+USER :
+network.platform@wbd.com
+uk6Ar.OB@6<_
 
- systemctl status post_to_api
+systemctl status post_to_api
 
- source host
+source host
+
+scp ivillarroel_sso@172.25.254.140:/home/ivillarroel_sso/apps/WBD_Network_Circuit_Monitoring/backup_2026_06_03.sql.gz .
+
+#   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   
+
+Crear usuario:
+docker exec -it wbd_logs_tracking_backend python manage.py shell -c "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.create_superuser(username='network.platform@wbd.com', email='network.platform@wbd.com', password='uk6Ar.OB@6<_')"
+
+#   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   
+
+Clear DB
+docker exec -it wbd_logs_tracking_backend python manage.py clean_logs_30_days
+docker exec -it wbd_logs_tracking_backend python manage.py clean_logs_7_days
+
+#   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   
+
+Crear Cronjob:
+crontab -e
+
+Listar Cronjobs:
+crontab -l
+
+Tarea:
+0 2 * * * /usr/bin/docker exec wbd_logs_tracking_backend python manage.py clean_logs_7_days >> /tmp/limpieza_db.log 2>&1
+
+#   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   
 
 Deamon :
 strlapnetadm02.net.wbd.com
 
-CNN Tiene una deuda grande con Warner
-Dalef se fuciona con CNN
-Atera media tiene su mayoria de planta externalizado
-
-
 -rw-r--r--.  1 nirole nirole  27678 Nov 28 10:36 ping-251128.tmp
 -rw-r--r--.  1 nirole nirole  31459 Nov 28 12:06 ping-251128.tmp
+
+
+http://localhost/api/logs/?&start=2026-6-2&end=2026-6-4&source_host=56m-er1-br01&target_host=AVE-56M-P

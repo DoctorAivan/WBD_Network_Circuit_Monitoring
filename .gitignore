@@ -4,4 +4,7 @@ __pycache__/
 .env
 json/*
 **/.DS_Store
-logs/*_log
+logs/*
+log_uploader.log
+post_to_api.backup.sh
+post_to_api.sh
