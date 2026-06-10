@@ -51,12 +51,12 @@ CORS_ALLOW_HEADERS = [
 ]
 
 ARRAY_ALLOWED_HOSTS = [
-    #"localhost",
+    "localhost",
     "circuits-status.net.wbd.com",
 ]
 
 ARRAY_ALLOWED_HOSTS_HTTPS = [
-    #"http://localhost",
+    "http://localhost",
     "https://circuits-status.net.wbd.com",
 ]
 
