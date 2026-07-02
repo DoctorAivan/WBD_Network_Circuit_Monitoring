@@ -221,35 +221,19 @@ class ServerLogQueryView(APIView):
         # Get absolute latest log of this circuit to calculate its current status
         latest_log = ServerLog.objects.filter(circuit=circuit).order_by("-timestamp").first()
 
-        # Calculate average timestamp of all circuits to detect Down status
-        latest_logs_subquery = (
-            ServerLog.objects
-            .filter(
-                source_host=OuterRef("source_host"),
-                circuit=OuterRef("circuit")
-            )
-            .order_by("-timestamp")
-        )
-        all_latest_queryset = (
-            ServerLog.objects
-            .filter(pk=Subquery(latest_logs_subquery.values("pk")[:1]))
-        )
-        epochs = [log.timestamp.timestamp() for log in all_latest_queryset if log.timestamp]
+        # Calculate status of the circuit based on the last log timestamp in the database (Option B)
+        last_log = ServerLog.objects.order_by("-timestamp").first()
         is_db_aware = False
-        if all_latest_queryset.exists() and all_latest_queryset[0].timestamp:
-            is_db_aware = dj_timezone.is_aware(all_latest_queryset[0].timestamp)
+        if last_log and last_log.timestamp:
+            is_db_aware = dj_timezone.is_aware(last_log.timestamp)
 
-        if epochs:
-            avg_epoch = sum(epochs) / len(epochs)
-            if is_db_aware:
-                avg_datetime = datetime.fromtimestamp(avg_epoch, tz=timezone.utc)
-            else:
-                avg_datetime = datetime.utcfromtimestamp(avg_epoch)
+        if last_log and last_log.timestamp:
+            limit_time = last_log.timestamp - timedelta(hours=1)
         else:
-            avg_datetime = dj_timezone.now() if is_db_aware else datetime.utcnow()
+            limit_time = (dj_timezone.now() if is_db_aware else datetime.utcnow()) - timedelta(hours=1)
 
         if latest_log:
-            if latest_log.timestamp and latest_log.timestamp < avg_datetime:
+            if latest_log.timestamp and latest_log.timestamp < limit_time:
                 circuit_status_name = "down"
             elif latest_log.min_value <= circuit.range_down:
                 circuit_status_name = "worker"
@@ -308,22 +292,16 @@ class LastLogPerSourceView(APIView):
             .order_by("source_host", "circuit__target_host")
         )
 
-        # Convert timestamps to epoch floats to compute average
-        epochs = [log.timestamp.timestamp() for log in queryset if log.timestamp]
-
-        # Check if database returns aware datetimes
+        # Get the latest log to base our time limit on (Option B)
+        last_log = ServerLog.objects.order_by("-timestamp").first()
         is_db_aware = False
-        if queryset.exists() and queryset[0].timestamp:
-            is_db_aware = dj_timezone.is_aware(queryset[0].timestamp)
+        if last_log and last_log.timestamp:
+            is_db_aware = dj_timezone.is_aware(last_log.timestamp)
 
-        if epochs:
-            avg_epoch = sum(epochs) / len(epochs)
-            if is_db_aware:
-                avg_datetime = datetime.fromtimestamp(avg_epoch, tz=timezone.utc)
-            else:
-                avg_datetime = datetime.utcfromtimestamp(avg_epoch)
+        if last_log and last_log.timestamp:
+            limit_time = last_log.timestamp - timedelta(hours=1)
         else:
-            avg_datetime = dj_timezone.now() if is_db_aware else datetime.utcnow()
+            limit_time = (dj_timezone.now() if is_db_aware else datetime.utcnow()) - timedelta(hours=1)
 
         logs_data = []
         worker_count = 0
@@ -334,7 +312,7 @@ class LastLogPerSourceView(APIView):
             log_serialized = ServerLogSerializer(log).data
 
             # Classify circuit state
-            if log.timestamp and log.timestamp < avg_datetime:
+            if log.timestamp and log.timestamp < limit_time:
                 status_name = "down"
                 down_count += 1
             elif log.min_value <= log.circuit.range_down:
