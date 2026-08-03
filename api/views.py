@@ -276,20 +276,19 @@ class LastLogPerSourceView(APIView):
 
     def get(self, request):
 
-        latest_log_subquery = (
+        logs_queryset = (
             ServerLog.objects
-            .filter(
-                source_host=OuterRef("source_host"),
-                circuit=OuterRef("circuit")
-            )
-            .order_by("-timestamp")
+            .order_by("source_host", "circuit", "-timestamp")
+            .distinct("source_host", "circuit")
+            .select_related("circuit__group")
         )
 
-        queryset = (
-            ServerLog.objects
-            .filter(pk=Subquery(latest_log_subquery.values("pk")[:1]))
-            .select_related("circuit")
-            .order_by("source_host", "circuit__target_host")
+        logs_list = sorted(
+            logs_queryset,
+            key=lambda log_item: (
+                log_item.source_host,
+                log_item.circuit.target_host if log_item.circuit else ""
+            )
         )
 
         # Get the latest log to base our time limit on (Option B)
@@ -308,7 +307,7 @@ class LastLogPerSourceView(APIView):
         protected_count = 0
         down_count = 0
 
-        for log in queryset:
+        for log in logs_list:
             log_serialized = ServerLogSerializer(log).data
 
             # Classify circuit state
@@ -326,8 +325,10 @@ class LastLogPerSourceView(APIView):
             log_serialized["status"] = (status_name == "protected")
             logs_data.append(log_serialized)
 
-        last_added = queryset.order_by("-timestamp").first() if queryset.exists() else None
-        last_updated_time = last_added.timestamp if last_added else dj_timezone.now()
+        last_updated_time = max(
+            (log_item.timestamp for log_item in logs_list if log_item.timestamp),
+            default=dj_timezone.now()
+        )
 
         response = {
             'updated': last_updated_time,
