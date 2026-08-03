@@ -3,6 +3,11 @@ services:
     image: postgres:14.1-alpine
     container_name: wbd_logs_tracking_db
     restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "1"
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: mongolico88!
@@ -16,6 +21,11 @@ services:
     image: redis:alpine
     container_name: wbd_logs_tracking_redis
     restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "1"
     ports:
       - 6379:6379
 
@@ -23,6 +33,11 @@ services:
     image: nginx:alpine
     container_name: wbd_logs_tracking_nginx
     restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "1"
     ports:
       - "80:80"
       - "443:443"
@@ -39,6 +54,11 @@ services:
       dockerfile: ./docker/Dockerfile
     container_name: wbd_logs_tracking_backend
     restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "1"
     environment:
       - PRODUCTION=1
     expose:
